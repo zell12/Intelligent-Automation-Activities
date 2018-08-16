@@ -16,7 +16,8 @@ This section will show how you can install and utilize the custom activities in 
 1. Open UiPath Studio and go to **Manage Packages** or hit `CTRL + P`.
 
 2. Select **Community** category and search for `Zell.CognitiveServices.Activities` and `Zell.MachineLearningModels.Activities`.
-![enter image description here](https://lh3.googleusercontent.com/B_50yv3r2itMB4D1EjngnnMtzjGapG_SE6_LJ-9VOWCHQXAVW2OXRWYEEA5QoM6nPQUAH2KPkkLO)
+
+	  ![enter image description here](https://lh3.googleusercontent.com/B_50yv3r2itMB4D1EjngnnMtzjGapG_SE6_LJ-9VOWCHQXAVW2OXRWYEEA5QoM6nPQUAH2KPkkLO)
 
 4. Install the specified packages.
 
@@ -41,12 +42,9 @@ Translate one or more Office documents, plain text HTML or PDF documents to anot
 ![enter image description here](https://lh3.googleusercontent.com/llBGwq3__4TGa2gf6lkTqykbPswe6JYZv7t7qku4RLS7GMozPZLHARUmGc1ACGMCYpOOoI6_5lgV)
 
 **Activity Parameters**
-|Name|Type|Required?|Remarks|
-|----|----|----|----|
-|File/s|  IN  |Y|via File Multiselect Dialog|
-|To   |  IN  |Y|Language ISO code e.g. 'fil', 'en', 'ro'|
-| API Key |IN|N|Defaults to a FREE key if not supplied -  up to 2M chars - see **Generating your own Azure key...** section|
-| Translated Files |OUT|N/A|List of translated files delimited by comma|
+
+![enter image description here](https://lh3.googleusercontent.com/NlN21cOqynAHuiyie4SAWri_OqV5QZrOSf50jH-axZIsEtkHsrsNSsP8MGaMYfeEmkTKXi4rTSKa)
+
 ![enter image description here](https://lh3.googleusercontent.com/XjftF_oVHpv7yBbLWMcc7sENczkXxTU8zcAHaJ0Sulvd5OlQYXDDOELUt1LTEP_DP8-RW23VNnhY)
 
 ### Text Translator
@@ -54,13 +52,9 @@ Cognitive service for natural language machine translation supporting over 60+ l
 ![enter image description here](https://lh3.googleusercontent.com/vAmbU7PMgWDhs9c_GL3w_HUUJBb_NvH2j2X2TzxUXVo6GkgkGQgPX2mljs2sV2Nhe5RmObIDayQo)
 
 **Activity Parameters**
-|Name|Type|Required?|Remarks|
-|----|----|----|----|
-|Text|  IN  |Y|Text to translate|
-|To   |  IN  |Y|Language ISO code e.g. 'fil', 'en', 'ro'|
-| API Key |IN|N|Defaults to a FREE key if not supplied -  up to 2M chars - see **Generating your own Azure key...** section|
-| Translated Text|OUT|N/A|Text translated to target language|
-| Detected Source Language|OUT|N/A|Source language detected|
+
+![enter image description here](https://lh3.googleusercontent.com/lb7X2wMfUg5QG0Ec702wu7srpJwajO9JUFWT6BuDacCuNnDBibGLpHnTwAEIHIPQZE9MlmlD87tY)
+
 ![enter image description here](https://lh3.googleusercontent.com/xEXTdbQQu36-FCuupNkNsXB2nowRZ6jn3s9seNOrMQ0Eifl1CPLnHM7LM2zpy14OayCeM_bXN0qx)
 
 > **Generating your own Azure key for the translation API**
@@ -93,13 +87,9 @@ Email classification experiment to assign an email to one or more class(es) of p
 ![enter image description here](https://lh3.googleusercontent.com/6WM3mKrDX683x5R8lPahVuIe2jKuI5X4lxUtnPM1T80A6wGneOj-ZisfIhr7600OndF0Q2hFeRO2)
 
 **Activity Parameters**
-|Name|Type|Required?|Remarks|
-|----|----|----|----|
-|Email Subject|  IN  |Y|Subject of the email to be classified|
-|Email Description   |  IN  |Y|Brief description of the email to be classified|
-| Case Type |OUT|N/A|Predicted case type classification|
-| Case Subject|OUT|N/A|Predicted case subject classification|
-| Case QUeue|OUT|N/A|Predicted queue name classification|
+
+![enter image description here](https://lh3.googleusercontent.com/8ODQ5H_dd6JOe7e4IhWZuzIszZqoIqBABfUOYMXGypF3iVu11qAQGPViw44rAe55GBRI9-5yTH1V)
+
 ![enter image description here](https://lh3.googleusercontent.com/B6iqVZovaDHc68dpKG5OeLecs34vDArXmJHW8k2uNrc8VYBfeQccq1KG3cAXiQ01TpyK2ho8Tp98)
 
 # Development and Debugging
