@@ -59,11 +59,11 @@ Cognitive service for natural language machine translation supporting over 60+ l
 
 > **Generating your own Azure key for the translation API**
 > 
->    ![Sign into Azure](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Sign_into_icon.png)  **1. Sign into Azure**
+>  ![Sign into Azure](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Sign_into_icon.png) **1. Sign into Azure**
 >   -   Don't have an account?  [Sign-up for a Microsoft Azure account](https://azure.com/)
 >   -   Already have an account?  [Sign-in](https://portal.azure.com/)
 >   
->  ![Subscribe to Microsoft Translator](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Subscribe_icon.png)    **2. Subscribe to Microsoft Translator**
+>  ![Subscribe to Microsoft Translator](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Subscribe_icon.png)   **2. Subscribe to Microsoft Translator**
 >   -   After you sign into Azure, go to the  [Cognitive Services](https://portal.azure.com/#create/Microsoft.CognitiveServices) section
 >    -   Under "API Type" select the Text or Speech API
 >    -   You can only add one Translator API subscription at a time
@@ -72,7 +72,7 @@ Cognitive service for natural language machine translation supporting over 60+ l
 >    -   Fill out the rest of the form, and select the Create button
 >    -   All subscriptions go into effect immediately
 >    
->    ![Authentication Key](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Auth_icon.png)   **3. Authentication Key**
+>  ![Authentication Key](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Auth_icon.png) **3. Authentication Key**
 >    -   Retrieve your authentication key by going to the menu All Resources > click on your subscription
 >    -   The Key value is used for authentication, keep the Key value confidential. You will need this when you develop your app
 
