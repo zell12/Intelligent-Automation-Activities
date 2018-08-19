@@ -175,3 +175,11 @@ C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveSer
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Release\Zell.CognitiveServices.Activities.Design.csproj.CopyComplete
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Release\Zell.CognitiveServices.Activities.Design.dll
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Release\Zell.CognitiveServices.Activities.Design.pdb
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Release\textmoderator-icon.png
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Release\Microsoft.Azure.CognitiveServices.ContentModerator.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Release\Microsoft.Rest.ClientRuntime.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Release\Newtonsoft.Json.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Release\Microsoft.Azure.CognitiveServices.ContentModerator.xml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Release\Microsoft.Rest.ClientRuntime.xml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Release\TextModeratorDesigner.baml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Release\TextModeratorDesigner.g.cs

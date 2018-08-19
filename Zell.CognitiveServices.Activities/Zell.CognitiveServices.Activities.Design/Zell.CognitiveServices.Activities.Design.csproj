@@ -51,8 +51,15 @@
     <Compile Include="DocumentTranslatorDesigner.xaml.cs">
       <DependentUpon>DocumentTranslatorDesigner.xaml</DependentUpon>
     </Compile>
+    <Compile Include="TextModeratorDesigner.xaml.cs">
+      <DependentUpon>TextModeratorDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZellCognitiveServicesMetadata.cs" />
     <Page Include="DocumentTranslatorDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="TextModeratorDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -103,6 +110,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="translator-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="textmoderator-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

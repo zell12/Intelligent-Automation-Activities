@@ -4,7 +4,7 @@
      xmlns:s="clr-namespace:System;assembly=mscorlib"
     xmlns:sapc="clr-namespace:System.Activities.Presentation.Converters;assembly=System.Activities.Presentation"
     xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
-    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"
+    xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation"             
     Width="278.933">
     <sap:ActivityDesigner.Icon>
         <DrawingBrush>

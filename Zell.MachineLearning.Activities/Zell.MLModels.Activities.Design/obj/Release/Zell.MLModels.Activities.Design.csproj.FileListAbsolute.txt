@@ -40,3 +40,5 @@ C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearn
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities.Design\obj\Release\Zell.MLModels.Activities.Design.csproj.CopyComplete
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities.Design\obj\Release\Zell.MLModels.Activities.Design.dll
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities.Design\obj\Release\Zell.MLModels.Activities.Design.pdb
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities.Design\obj\Release\CreditsMlModelDesigner.baml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities.Design\obj\Release\CreditsMlModelDesigner.g.cs

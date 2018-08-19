@@ -22,7 +22,7 @@ namespace Zell.CognitiveServices
         public InArgument<string> TargetLanguageCode { get; set; }
 
         [Category("Input")]
-        [Description("Defaults to a free key if not supplied. Recommended to register a key in Azure")]
+        [Description("Defaults to a free key if not supplied. Recommended to register your own key in Azure")]
         [DisplayName("API Key")]
         public InArgument<string> ApiKey { get; set; }
 

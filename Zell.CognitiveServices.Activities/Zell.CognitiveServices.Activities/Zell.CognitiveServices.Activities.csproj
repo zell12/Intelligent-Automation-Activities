@@ -30,6 +30,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Azure.CognitiveServices.ContentModerator">
+      <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\.nuget\packages\microsoft.azure.cognitiveservices.contentmoderator\0.12.1-preview\lib\net452\Microsoft.Azure.CognitiveServices.ContentModerator.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime">
+      <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\.nuget\packages\microsoft.rest.clientruntime\2.3.11\lib\net452\Microsoft.Rest.ClientRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Rest.ClientRuntime.Azure">
+      <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\.nuget\packages\microsoft.rest.clientruntime.azure\3.3.12\lib\net452\Microsoft.Rest.ClientRuntime.Azure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\.nuget\packages\newtonsoft.json\11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Activities" />
     <Reference Include="System.ComponentModel.Composition" />
@@ -47,8 +60,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DocumentTranslator.cs" />
+    <Compile Include="TextModerator.cs" />
     <Compile Include="TextTranslator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\ContentModeration\ContentModeratorClient.cs" />
+    <Compile Include="Utilities\ContentModeration\Models\TextEvaluationOutputModel.cs" />
     <Compile Include="Utilities\TranslationUtility\DocumentTranslationClient.cs" />
     <Compile Include="Utilities\TranslationUtility\TranslationClient.cs" />
   </ItemGroup>
@@ -56,6 +72,9 @@
     <EmbeddedResource Include="doctranslator-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
+    <Content Include="textmoderator-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="translator-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>

@@ -117,8 +117,8 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CognitiveActivitiesSearchCategories" xml:space="preserve">
-    <value>Zell Power Up.Cognitive Services.Search</value>
+  <data name="CognitiveActivitiesContentModerationCategories" xml:space="preserve">
+    <value>Zell Power Up.Cognitive Services.Content Moderation</value>
   </data>
   <data name="CognitiveActivitiesTranslationCategories" xml:space="preserve">
     <value>Zell Power Up.Cognitive Services.Translation</value>

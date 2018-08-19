@@ -27,7 +27,7 @@ namespace Zell.CognitiveServices.Activities.Design
         public static void RegisterMetadata(AttributeTableBuilder builder)
         {
             // Text translator attribute
-            string textTranslatorDescription = "v9 - Cognitive service for natural language machine translation supporting over 60 + languages and dialects. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
+            string textTranslatorDescription = "v10 - Cognitive service for natural language machine translation supporting over 60 + languages and dialects. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
             builder.AddCustomAttributes(typeof(TextTranslator), new DesignerAttribute(typeof(TextTranslatorDesigner)));
             builder.AddCustomAttributes(typeof(TextTranslator), new DescriptionAttribute(textTranslatorDescription));
             builder.AddCustomAttributes(typeof(TextTranslator), new CategoryAttribute(Properties.Resources.CognitiveActivitiesTranslationCategories));

@@ -158,8 +158,13 @@ C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveSer
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Zell.CognitiveServices.Activities.Design.dll
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Zell.CognitiveServices.Activities.Design.pdb
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Zell.CognitiveServices.Activities.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Microsoft.Azure.CognitiveServices.ContentModerator.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Microsoft.Rest.ClientRuntime.dll
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\CommandLine.ToolKit.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Newtonsoft.Json.dll
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Zell.CognitiveServices.Activities.pdb
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Microsoft.Azure.CognitiveServices.ContentModerator.xml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\Microsoft.Rest.ClientRuntime.xml
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\CommandLine.ToolKit.pdb
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\CommandLine.ToolKit.dll.config
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Debug\Zell.CognitiveServices.Activities.Design.csprojAssemblyReference.cache
@@ -175,3 +180,6 @@ C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveSer
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Debug\Zell.CognitiveServices.Activities.Design.csproj.CopyComplete
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Debug\Zell.CognitiveServices.Activities.Design.dll
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Debug\Zell.CognitiveServices.Activities.Design.pdb
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\bin\Debug\textmoderator-icon.png
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Debug\TextModeratorDesigner.baml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities.Design\obj\Debug\TextModeratorDesigner.g.cs

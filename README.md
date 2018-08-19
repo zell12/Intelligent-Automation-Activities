@@ -63,22 +63,19 @@ Cognitive service for natural language machine translation supporting over 60+ l
 >   -   Don't have an account?  [Sign-up for a Microsoft Azure account](https://azure.com/)
 >   -   Already have an account?  [Sign-in](https://portal.azure.com/)
 >   
->  ![Subscribe to Microsoft Translator](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Subscribe_icon.png)   **2. Subscribe to Microsoft Translator**
+>  ![Subscribe to Microsoft Translator](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Subscribe_icon.png) **2. Subscribe to Microsoft Translator**
 >   -   After you sign into Azure, go to the  [Cognitive Services](https://portal.azure.com/#create/Microsoft.CognitiveServices) section
->    -   Under "API Type" select the Text or Speech API
->    -   You can only add one Translator API subscription at a time
->    -   In the Pricing Tier section, select the pricing tier that best fits your needs
->    -   Each subscription has a free tier. The free tier has the same features and functionalities as the paid plans and does not have an expiration date
->    -   Fill out the rest of the form, and select the Create button
->    -   All subscriptions go into effect immediately
+>   -   Under "API Type" select the Text or Speech API
+>   -   You can only add one Translator API subscription at a time
+>   -   In the Pricing Tier section, select the pricing tier that best fits your needs
+>   -   Each subscription has a free tier. The free tier has the same features and functionalities as the paid plans and does not have an expiration date
+>   -   Fill out the rest of the form, and select the Create button
+>   -   All subscriptions go into effect immediately
 >    
 >  ![Authentication Key](https://www.microsoft.com/en-us/translator/business/wp-content/uploads/sites/8/2018/06/Auth_icon.png) **3. Authentication Key**
->    -   Retrieve your authentication key by going to the menu All Resources > click on your subscription
->    -   The Key value is used for authentication, keep the Key value confidential. You will need this when you develop your app
-
-    
+>   -   Retrieve your authentication key by going to the menu All Resources > click on your subscription
+>   -   The Key value is used for authentication, keep the Key value confidential. You will need this when you develop your app  
   
-
 ## Machine Learning Models
 Activities integrated into a powerful cloud-based predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
 
@@ -109,7 +106,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Updating local package
 
- 1. Rebuild the solution in Visual Studio.
+   1. Rebuild the solution in Visual Studio.
 
 > Optionally, you can add a version indicator on the class description
 > e.g. *v1 - Description of class*
@@ -122,7 +119,7 @@ These instructions will get you a copy of the project up and running on your loc
     
    3. On UiStudio, go to Activities Explorer > Manage Packages > Update > Select package to update.
     
-    4. Restart UiPath Studio, if prompted.
+   4. Restart UiPath Studio, if prompted.
 
 # Built With
 

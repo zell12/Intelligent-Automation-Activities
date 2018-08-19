@@ -48,7 +48,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CreditsMlModelDesigner.xaml.cs">
+      <DependentUpon>CreditsMlModelDesigner.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ZellMLModelDesignerMetadata.cs" />
+    <Page Include="CreditsMlModelDesigner.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="EmailTicketClassifierDesigner.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -91,6 +98,11 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="email-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="credit-grant-icon.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
   </ItemGroup>

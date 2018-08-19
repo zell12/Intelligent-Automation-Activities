@@ -19,6 +19,7 @@ namespace Zell.CognitiveServices.Activities.Design
             var builder = new AttributeTableBuilder();
             TextTranslatorDesigner.RegisterMetadata(builder);
             DocumentTranslatorDesigner.RegisterMetadata(builder);
+            TextModeratorDesigner.RegisterMetadata(builder);
             // TODO: Other activities can be added here
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

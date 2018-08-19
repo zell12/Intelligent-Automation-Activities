@@ -18,6 +18,7 @@ namespace Zell.MLModels.Activities.Design
         {
             var builder = new AttributeTableBuilder();
             EmailTicketClassifierDesigner.RegisterMetadata(builder);
+            CreditsMlModelDesigner.RegisterMetadata(builder);
             // TODO: Other activities can be added here
             MetadataStore.AddAttributeTable(builder.CreateTable());
         }

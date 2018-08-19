@@ -61,11 +61,11 @@ namespace Zell.CognitiveServices.Activities.Design.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Zell Power Up.Cognitive Services.Search.
+        ///   Looks up a localized string similar to Zell Power Up.Cognitive Services.Content Moderation.
         /// </summary>
-        internal static string CognitiveActivitiesSearchCategories {
+        internal static string CognitiveActivitiesContentModerationCategories {
             get {
-                return ResourceManager.GetString("CognitiveActivitiesSearchCategories", resourceCulture);
+                return ResourceManager.GetString("CognitiveActivitiesContentModerationCategories", resourceCulture);
             }
         }
         

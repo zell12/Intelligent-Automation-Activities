@@ -2,7 +2,6 @@
 using System.ComponentModel;
 using Utilities;
 using System.Drawing;
-using Utilities;
 using System.IO;
 using System.Collections.Generic;
 using System;
@@ -29,7 +28,7 @@ namespace Zell.CognitiveServices
 
         [Category("Input")]
         [DisplayName("API Key")]
-        [Description("Defaults to a free key if not supplied. Recommended to register a key in Azure")]
+        [Description("Defaults to a free key if not supplied. Recommended to register your own key in Azure")]
         public InArgument<string> ApiKey { get; set; }
 
         [Category("Output")]
