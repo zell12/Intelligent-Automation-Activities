@@ -1,3 +1,4 @@
+
 # INTELLIGENT CUSTOM ACTIVITIES FOR UIPATH
 These are packages and custom activities infused with AI - Machine Learning models, cognitive services and all those good stuffs. Each are carefully implemented and structured to provide a whole new meaning of intelligence to your automation workflows. 
 All of these are available to the community via [UiPath community gallery.](https://gallery.uipath.com/)
@@ -23,7 +24,8 @@ This section will show how you can install and utilize the custom activities in 
 
 ### Use the activities
 1. Find and collapse `Zell Power Up`  on the Available categories of Activity Explorer.
-![enter image description here](https://lh3.googleusercontent.com/ABabFFqYqKLzWTmDZHq2CojO-2ke51HjSkWqwHAGkZ9eklNTd7M-giqqMXRzJdyGfIgUwCy2c7Dw)
+
+	![enter image description here](https://lh3.googleusercontent.com/9YAcJvQST3c0pJrERgl5Et3YDsmIvQL3rjkzpUMeRg97HOstWcx_SGSth2KnvLoKTe-nuD69kkdj)
 
 > 	If the category cannot be found upon installation, you may need to
 > restart UiPath Studio for the new activities to be available.
@@ -33,12 +35,40 @@ This section will show how you can install and utilize the custom activities in 
 3. Read on below for further details on each activity.
 
 # Packages and Activity Inclusions
+##  `Version 1.1 (August 22, 2018)` 
+    ## Additions
+    - Additional intelligent activities
+	    Text Moderation (Cognitive service)
+	    Credit Grant Assessor (Machine Learning Model)
+### Text Moderation
+Helps you detect potential profanity in more than 100 languages and match text against your custom lists automatically. Content Moderator also checks for possible personally identifiable information (PII). This activity comes with a free text moderator api key for development purposes. If for extensive use, its recommended to generate your own subscription key in Azure.
+
+> You can [sign up here](https://azure.microsoft.com/en-us/try/cognitive-services/)  for the  **free**  trial key.  A free trial key is limited **only to 1 call per second.**
+> **Alternately**, you can buy access key from  [Azure Portal](https://portal.azure.com/). While buying access key you may want to consider which tier is appropriate for you. More information is [here](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/search-api/web/).
+
+**Activity Parameters**  
+
+![enter image description here](https://lh3.googleusercontent.com/1IWNWINm1XFOvcBLOb1egu1LXr5f8wEEQOCewEsq2LVt_mFq9SJIdaS2cMyhyb55Ey2CEu-eJda0)
+
+![enter image description here](https://lh3.googleusercontent.com/aFe2f9nMcWSqbosSHhW5qREd3pNKUw8OyV8f4mPUc4dEbqD2W40Rj6JfsfNJ5NEh9RZjYQnO4VYX)
+
+### Credit Grant Assessor
+This activity can be used to easily incorporate credit risk assessment into your automation. Credit Risk models play a key role in the assessment of two main risk drivers. 1)Willingness to pay and 2) Ability to pay. Credit scoring algorithms, which make a guess at the probability of default, are the method banks use to determine whether or not a loan should be granted.
+
+![enter image description here](https://lh3.googleusercontent.com/UmvVXCtia-Uu9lrCSmczidcA2F8rxl1BIuWwIhOIXg0BJPMzSQx4A8FktAMj4PDlt6r_0qTKF2I8)
+
+**Activity Parameters**
+
+![enter image description here](https://lh3.googleusercontent.com/Xz9SIhQdRkOfLO0JB1Rsn2X5ag8WpGiTetRO7E84FqcGXeCGC6zFdUK2yCa46DmtXIpnisoToUu7)
+
 ## `Version 1.0 (August 16, 2018)`
+    ## Initial Build
 ## Cognitive Services
 Easy-to-use and intelligent automation activity APIs and libraries built on top of Microsoft Azure cognitive service platforms.
 ### Document Translator
 
 Translate one or more Office documents, plain text HTML or PDF documents to another language, in one go.
+
 ![enter image description here](https://lh3.googleusercontent.com/llBGwq3__4TGa2gf6lkTqykbPswe6JYZv7t7qku4RLS7GMozPZLHARUmGc1ACGMCYpOOoI6_5lgV)
 
 **Activity Parameters**
@@ -49,6 +79,7 @@ Translate one or more Office documents, plain text HTML or PDF documents to anot
 
 ### Text Translator
 Cognitive service for natural language machine translation supporting over 60+ languages and dialects.
+
 ![enter image description here](https://lh3.googleusercontent.com/vAmbU7PMgWDhs9c_GL3w_HUUJBb_NvH2j2X2TzxUXVo6GkgkGQgPX2mljs2sV2Nhe5RmObIDayQo)
 
 **Activity Parameters**
@@ -81,6 +112,7 @@ Activities integrated into a powerful cloud-based predictive analytics service t
 
 ### Email ticket classifier 
 Email classification experiment to assign an email to one or more class(es) of predefined set of classes or work queues.
+
 ![enter image description here](https://lh3.googleusercontent.com/6WM3mKrDX683x5R8lPahVuIe2jKuI5X4lxUtnPM1T80A6wGneOj-ZisfIhr7600OndF0Q2hFeRO2)
 
 **Activity Parameters**

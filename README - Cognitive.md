@@ -1,12 +1,12 @@
 # INTELLIGENT CUSTOM ACTIVITIES FOR UIPATH  
 
-These are packages and custom activities infused with AI - Machine Learning models, cognitive services and all those good stuffs. Each are carefully implemented and structured to provide a whole new meaning of intelligence to your automation workflows.   
-All of these are available to the community via [UiPath community gallery.](https://gallery.uipath.com/)  
+ These are packages and custom activities infused with AI - Machine Learning models, cognitive services and all those good stuffs. Each are carefully implemented and structured to provide a whole new meaning of intelligence to your automation workflows.   
+ All of these are available to the community via [UiPath community gallery.](https://gallery.uipath.com/)  
   
 
 # Getting Started  
 
-This section will show how you can install and utilize the custom activities in your automation workflow.  
+ This section will show how you can install and utilize the custom activities in your automation workflow.  
   
 
 ## Prerequisites  
@@ -18,31 +18,31 @@ This section will show how you can install and utilize the custom activities in 
 ## How To  
   
 
-### Install the activity packages in UiPath Studio  
+ ### Install the activity packages in UiPath Studio  
   
 
-1. Open UiPath Studio and go to **Manage Packages** or hit `CTRL + P`.  
+ 1. Open UiPath Studio and go to **Manage Packages** or hit `CTRL + P`.  
   
-2. Select **Community** category and search for `Zell.CognitiveServices.Activities`.
+ 2. Select **Community** category and search for `Zell.CognitiveServices.Activities`.
   
-  ![](https://lh3.googleusercontent.com/B_50yv3r2itMB4D1EjngnnMtzjGapG_SE6_LJ-9VOWCHQXAVW2OXRWYEEA5QoM6nPQUAH2KPkkLO)  
+	  ![enter image description here](https://lh3.googleusercontent.com/bwqv_E1MbaR8encAYhiyCtI1RIzZl_0_EhijVEzSfc7VPcvdGZQ0ulTv0U3McjW5R7mPvtnn4ImX)  
   
-3. Install the specified packages.  
+ 3. Install the specified packages.  
   
 
 ### Use the activities  
 
-1. Find and collapse `Zell Power Up` on the Available categories of Activity Explorer.  
-![](https://lh3.googleusercontent.com/ABabFFqYqKLzWTmDZHq2CojO-2ke51HjSkWqwHAGkZ9eklNTd7M-giqqMXRzJdyGfIgUwCy2c7Dw)![enter image description here](https://lh3.googleusercontent.com/ABabFFqYqKLzWTmDZHq2CojO-2ke51HjSkWqwHAGkZ9eklNTd7M-giqqMXRzJdyGfIgUwCy2c7Dw)  
+ 1. Find and collapse `Zell Power Up` on the Available categories of Activity Explorer and expand `Cognitive Services`.  
+  
+	  ![enter image description here](https://lh3.googleusercontent.com/QNo0aMQlbGrsFPWY_pe64IZ2Xu1NgeJp6CWQSbup4DRA3mOQe7wjNZgwxklUaoKL_PQ-J8ujD_vI)
+
+ > If the category cannot be found upon installation, you may need to  
+ > restart UiPath Studio for the new activities to be available.  
   
 
-> If the category cannot be found upon installation, you may need to  
-> restart UiPath Studio for the new activities to be available.  
+ 2. Drag and drop the desired activities into the activity canvas and supply the necessary parameters.   
   
-
-2. Drag and drop the desired activities into the activity canvas and supply the necessary parameters.   
-  
-3. Read on below for further details on each activity.  
+ 3. Read on below for further details on each activity.  
   
 
 # Packages and Activity Inclusions  
@@ -51,41 +51,47 @@ This section will show how you can install and utilize the custom activities in 
 Easy-to-use and intelligent automation activity APIs and libraries built on top of Microsoft Azure cognitive service platforms.  
 ##  `Version 1.1 (August 22, 2018)` 
 
-    ## Changes
-    - Bug fixes and enhancments on Document Translator
     ## Additions
-    - Additional intelligent activity - Content Moderation
+    - Additional intelligent activity - Text Moderation
 
-### Content Moderation
+### Text Moderation
+Helps you detect potential profanity in more than 100 languages and match text against your custom lists automatically. Content Moderator also checks for possible personally identifiable information (PII). This activity comes with a free text moderator api key for development purposes. If for extensive use, its recommended to generate your own subscription key in Azure.
+
+> You can [sign up here](https://azure.microsoft.com/en-us/try/cognitive-services/)  for the  **free**  trial key.  A free trial key is limited **only to 1 call per second.**
+> **Alternately**, you can buy access key from  [Azure Portal](https://portal.azure.com/). While buying access key you may want to consider which tier is appropriate for you. More information is [here](https://azure.microsoft.com/en-us/pricing/details/cognitive-services/search-api/web/).
+
+**Activity Parameters**  
+
+![enter image description here](https://lh3.googleusercontent.com/1IWNWINm1XFOvcBLOb1egu1LXr5f8wEEQOCewEsq2LVt_mFq9SJIdaS2cMyhyb55Ey2CEu-eJda0)
+
+![enter image description here](https://lh3.googleusercontent.com/aFe2f9nMcWSqbosSHhW5qREd3pNKUw8OyV8f4mPUc4dEbqD2W40Rj6JfsfNJ5NEh9RZjYQnO4VYX)
+
 
 ##  `Version 1.0 (August 16, 2018)`  
     ## Initial Build
 ### Document Translator  
-Translate one or more Office documents, plain text HTML or PDF documents to another language, in one go.  
+Translate one or more Office documents, plain text HTML or PDF documents to another language, in one go.  This activity comes with a free text translator api key for development purposes. If for extensive use, its recommended to generate your own subscription key in Azure.
+
 ![](https://lh3.googleusercontent.com/llBGwq3__4TGa2gf6lkTqykbPswe6JYZv7t7qku4RLS7GMozPZLHARUmGc1ACGMCYpOOoI6_5lgV)  
   
 
 **Activity Parameters**  
-  
 
 ![](https://lh3.googleusercontent.com/NlN21cOqynAHuiyie4SAWri_OqV5QZrOSf50jH-axZIsEtkHsrsNSsP8MGaMYfeEmkTKXi4rTSKa)  
   
-
 ![](https://lh3.googleusercontent.com/XjftF_oVHpv7yBbLWMcc7sENczkXxTU8zcAHaJ0Sulvd5OlQYXDDOELUt1LTEP_DP8-RW23VNnhY)  
   
 
 ### Text Translator  
 
-Cognitive service for natural language machine translation supporting over 60+ languages and dialects.  
+Cognitive service for natural language machine translation supporting over 60+ languages and dialects.  This activity comes with a free text moderator api key for development purposes. If for extensive use, its recommended to generate your own subscription key in Azure.
+
 ![](https://lh3.googleusercontent.com/vAmbU7PMgWDhs9c_GL3w_HUUJBb_NvH2j2X2TzxUXVo6GkgkGQgPX2mljs2sV2Nhe5RmObIDayQo)  
   
-
 **Activity Parameters**  
   
-
 ![](https://lh3.googleusercontent.com/lb7X2wMfUg5QG0Ec702wu7srpJwajO9JUFWT6BuDacCuNnDBibGLpHnTwAEIHIPQZE9MlmlD87tY)  
   
-
 ![](https://lh3.googleusercontent.com/xEXTdbQQu36-FCuupNkNsXB2nowRZ6jn3s9seNOrMQ0Eifl1CPLnHM7LM2zpy14OayCeM_bXN0qx)  
   
 

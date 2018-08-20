@@ -17,13 +17,14 @@ This section will show how you can install and utilize the custom activities in 
 
 2. Select **Community** category and search for `Zell.MachineLearningModels.Activities`.
 
-	  ![enter image description here](https://lh3.googleusercontent.com/B_50yv3r2itMB4D1EjngnnMtzjGapG_SE6_LJ-9VOWCHQXAVW2OXRWYEEA5QoM6nPQUAH2KPkkLO)
+	  ![enter image description here](https://lh3.googleusercontent.com/Dqvi2dbCnbOO3eU2Ul4FxkWoIqoAptOIcKqL81GPsfvnonX-WhsJv5NyA5sbxlu69Fv2Ns-thoMv)
 
 4. Install the specified packages.
 
 ### Use the activities
-1. Find and collapse `Zell Power Up`  on the Available categories of Activity Explorer.
-![enter image description here](https://lh3.googleusercontent.com/ABabFFqYqKLzWTmDZHq2CojO-2ke51HjSkWqwHAGkZ9eklNTd7M-giqqMXRzJdyGfIgUwCy2c7Dw)
+1. Find and collapse `Zell Power Up`  on the Available categories of Activity Explorer and expand `Machine Learning`.
+
+	![enter image description here](https://lh3.googleusercontent.com/zKQtzA9YR6Irot0Ymsa3uH1Fwv34qniM4SVY4Yj5HttjNHwqlxtuyBX8pdlYjoPhIkGRmc1QvgGM)
 
 > 	If the category cannot be found upon installation, you may need to
 > restart UiPath Studio for the new activities to be available.
@@ -37,14 +38,17 @@ This section will show how you can install and utilize the custom activities in 
 Activities integrated into a powerful cloud-based predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
 ## `Version 1.1 (August 22, 2018)`
 
-    ## Changes
-    - Retrained email ticket classifier with updated dataset
     ## Additions
-    - Additional 2 ML models - Fraud Detection and Credit Risk Assessment
+    - Additional ML model - Credit Grant Assessor
 
-### Fraud Detection
+### Credit Grant Assessor
+This activity can be used to easily incorporate credit risk assessment into your automation. Credit Risk models play a key role in the assessment of two main risk drivers. 1)Willingness to pay and 2) Ability to pay. Credit scoring algorithms, which make a guess at the probability of default, are the method banks use to determine whether or not a loan should be granted.
 
-### Credit Risk Scoring
+![enter image description here](https://lh3.googleusercontent.com/UmvVXCtia-Uu9lrCSmczidcA2F8rxl1BIuWwIhOIXg0BJPMzSQx4A8FktAMj4PDlt6r_0qTKF2I8)
+
+**Activity Parameters**
+
+![enter image description here](https://lh3.googleusercontent.com/Xz9SIhQdRkOfLO0JB1Rsn2X5ag8WpGiTetRO7E84FqcGXeCGC6zFdUK2yCa46DmtXIpnisoToUu7)
 
 ## `Version 1.0 (August 16, 2018)`
 
