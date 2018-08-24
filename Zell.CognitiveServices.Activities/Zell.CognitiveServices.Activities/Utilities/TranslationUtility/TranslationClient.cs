@@ -10,7 +10,6 @@ namespace Utilities
 {
     public class MicrosoftTranslationClient
     {
-        // Default key, free subscription
         public static string ApiKey = "59718ff5919f4a8781bdb9dc72fb15d8";
 
         public static string TranslateText(string text, string to)

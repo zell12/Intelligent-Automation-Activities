@@ -1,0 +1,17 @@
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\Zell.MLModels.Activities.dll.config
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\Zell.MLModels.Activities.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\Zell.MLModels.Activities.pdb
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\Newtonsoft.Json.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\System.Net.Http.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\System.Net.Http.Formatting.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\System.Security.Cryptography.Algorithms.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\System.Security.Cryptography.Encoding.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\System.Security.Cryptography.Primitives.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\Newtonsoft.Json.xml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\bin\Debug\System.Net.Http.Formatting.xml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\obj\Debug\Zell.MLModels.Activities.csprojAssemblyReference.cache
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\obj\Debug\Zell.MLModels.Activities.csproj.CoreCompileInputs.cache
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\obj\Debug\Zell.MLModels.Activities.csproj.CopyComplete
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\obj\Debug\Zell.MLModels.Activities.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.MachineLearning.Activities\Zell.MLModels.Activities\obj\Debug\Zell.MLModels.Activities.pdb

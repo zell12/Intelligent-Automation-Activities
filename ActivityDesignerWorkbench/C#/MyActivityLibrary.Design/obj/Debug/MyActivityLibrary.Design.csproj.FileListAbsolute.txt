@@ -1,0 +1,13 @@
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\bin\Debug\MyActivityLibrary.Design.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\bin\Debug\MyActivityLibrary.Design.pdb
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design.csprojAssemblyReference.cache
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityDesigner.baml
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityDesigner.g.cs
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design_MarkupCompile.cache
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design.g.resources
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design.Properties.Resources.resources
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design.csproj.GenerateResource.cache
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design.csproj.CoreCompileInputs.cache
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design.csproj.CopyComplete
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Debug\MyActivityLibrary.Design.pdb

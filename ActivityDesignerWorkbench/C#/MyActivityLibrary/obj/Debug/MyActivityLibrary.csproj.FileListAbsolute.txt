@@ -1,0 +1,6 @@
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\bin\Debug\MyActivityLibrary.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\bin\Debug\MyActivityLibrary.pdb
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\obj\Debug\MyActivityLibrary.csprojAssemblyReference.cache
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\obj\Debug\MyActivityLibrary.csproj.CoreCompileInputs.cache
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\obj\Debug\MyActivityLibrary.dll
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\obj\Debug\MyActivityLibrary.pdb
