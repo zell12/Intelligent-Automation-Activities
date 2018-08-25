@@ -57,7 +57,7 @@ namespace Zell.CognitiveServices
             }
             catch (System.Exception ex)
             {
-                throw new System.Exception("\nAn error is encountered. Subscription key might be invalid. Follow the steps below:\n(1) Subscribe and generate a text translator API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.");
+                throw new System.Exception(MicrosoftTranslationClient.InvalidApiKeyResolution);
             }
         }
     }

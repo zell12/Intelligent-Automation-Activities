@@ -43,11 +43,15 @@ namespace Zell.CognitiveServices
             List<string> filesForTranslation = new List<string>();
             List<string> translatedFiles = new List<string>();
 
-            
-            if (files.Length == 1 && !File.Exists(files.ToString()))
+            if (files.Length == 1)
             {
-                // Check if only one file is selected and if it exists
-                throw new System.IO.FileNotFoundException("The document specified is not found. Make sure the file exists or full path is typed correctly.");
+                if (!File.Exists(files[0]))
+                {
+                    // Check if only one file is selected and if it exists
+                    throw new System.IO.FileNotFoundException("The document specified is not found. Make sure the file exists or full path is typed correctly.");
+                }
+                else
+                    filesForTranslation.Add(files[0]);
             }
             else
             {
@@ -56,7 +60,6 @@ namespace Zell.CognitiveServices
                     if (File.Exists(selectedFile))
                         filesForTranslation.Add(selectedFile);
                 }
-                
             }
 
             var targetLanguageCode = TargetLanguageCode.Get(context);
@@ -71,9 +74,13 @@ namespace Zell.CognitiveServices
                 translatedFiles = DocumentTranslationClient.TranslateDocument(String.Join(",",filesForTranslation), targetLanguageCode);                
                 TranslatedDoc.Set(context, translatedFiles);
             }
+            catch (System.UnauthorizedAccessException uex)
+            {
+                throw new System.Exception(MicrosoftTranslationClient.InvalidApiKeyResolution);
+            }
             catch (System.Exception ex)
             {
-                throw new System.Exception("\nAn error is encountered. Subscription key might be invalid. Follow the steps below:\n(1) Subscribe and generate a text translator API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.");
+                throw new System.Exception(ex.Message);
             }
         }
     }

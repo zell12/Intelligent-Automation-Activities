@@ -23,6 +23,8 @@ namespace Utilities
                 return Path.GetDirectoryName(path);
             }
         }
+
+        
         static string _docTranslatorUtilityPath = $"{AssemblyDirectory}\\Utilities\\DocumentTranslator";
         static string _docTranslatorExe = $"{_docTranslatorUtilityPath}\\DocumentTranslatorCmd.exe";
 
@@ -48,15 +50,16 @@ namespace Utilities
                 }
             }
 
-            try
-            {
-                Task.Run(async () => await CommandLineToolKit.ValidateAndRunAsync("cmd", command)).Wait();
-                //await CommandLineToolKit.ValidateAndRunAsync("cmd", command);
+            var cmdOutput = "";
+            bool isSuccessful = CommandLineToolKit.ValidateAndRunAsync("cmd", out cmdOutput, command);
+            if (isSuccessful)
                 return outputFilesFullPath;
-            }
-            catch (Exception ex)
+            else
             {
-                return new List<string> { ex.Message };
+                if (cmdOutput.ToLower().Contains(MicrosoftTranslationClient.InvalidCredentialsError))
+                    throw new System.UnauthorizedAccessException(cmdOutput);
+                else
+                    throw new System.Exception(cmdOutput);
             }
         }
     }

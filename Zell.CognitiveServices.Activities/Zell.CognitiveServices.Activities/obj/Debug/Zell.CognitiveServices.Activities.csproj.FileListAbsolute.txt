@@ -133,6 +133,7 @@ C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveSer
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\bin\Debug\Utilities\DocumentTranslator\Tools.TranslationAssistant.TranslationServices.Core.dll.config
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\bin\Debug\Utilities\DocumentTranslator\TranslationAssistant.AutomationToolkit.TranslationPlugins.dll.config
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\bin\Debug\Utilities\DocumentTranslator\TranslationAssistant.Business.dll.config
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\bin\Debug\textmoderator-icon.png
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\bin\Debug\translator-icon.png
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\bin\Debug\doctranslator-icon.png
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\bin\Debug\Zell.CognitiveServices.Activities.dll
@@ -152,4 +153,3 @@ C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveSer
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\obj\Debug\Zell.CognitiveServices.Activities.csproj.CopyComplete
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\obj\Debug\Zell.CognitiveServices.Activities.dll
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\obj\Debug\Zell.CognitiveServices.Activities.pdb
-C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\Zell.CognitiveServices.Activities\Zell.CognitiveServices.Activities\bin\Debug\textmoderator-icon.png

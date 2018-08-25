@@ -10,6 +10,8 @@ namespace Utilities
 {
     public class MicrosoftTranslationClient
     {
+        public const string InvalidCredentialsError = "Credentials are invalid";
+        public const string InvalidApiKeyResolution = "\nAn error is encountered.Subscription key might be invalid.Follow the steps below:\n(1) Subscribe and generate a text translator API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
         public static string ApiKey = "59718ff5919f4a8781bdb9dc72fb15d8";
 
         public static string TranslateText(string text, string to)

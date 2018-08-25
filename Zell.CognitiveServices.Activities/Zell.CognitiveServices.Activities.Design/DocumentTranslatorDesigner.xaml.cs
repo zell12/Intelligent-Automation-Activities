@@ -32,7 +32,7 @@ namespace Zell.CognitiveServices.Activities.Design
         public static void RegisterMetadata(AttributeTableBuilder builder)
         {
             // Text translator attribute
-            string docTranslatorDescription = "v28 - The Microsoft Document Translator translates Microsoft Office, plain text, HTML, PDF files and SRT caption files, from and to any of the 60+ languages supported by the Microsoft Translator web service. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
+            string docTranslatorDescription = "v30 - The Microsoft Document Translator translates Microsoft Office, plain text, HTML, PDF files and SRT caption files, from and to any of the 60+ languages supported by the Microsoft Translator web service. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
             builder.AddCustomAttributes(typeof(DocumentTranslator), new DesignerAttribute(typeof(DocumentTranslatorDesigner)));
             builder.AddCustomAttributes(typeof(DocumentTranslator), new DescriptionAttribute(docTranslatorDescription));
             builder.AddCustomAttributes(typeof(DocumentTranslator), new CategoryAttribute(Properties.Resources.CognitiveActivitiesTranslationCategories));
