@@ -1,7 +1,7 @@
-**/obj/
-**/bin/Debug/
-**/bin/Release/
 _AppTest/
+bin/
+obj/
+
 _AppTest/ActivityDesignerWorkbench/C#/\.vs/MyActivityLibrary/DesignTimeBuild/\.dtbcache
 
 _AppTest/ActivityDesignerWorkbench/C#/\.vs/MyActivityLibrary/v15/\.suo
@@ -1369,3 +1369,9 @@ PackageBuilds/Zell\.MachineLearningModels\.Activities\.1\.0\.8\.nupkg
 PackageBuilds/Zell\.MachineLearningModels\.Activities\.1\.0\.9\.nupkg
 
 UpdatingPackageInUiStudio\.txt
+
+Zell\.CognitiveServices\.Activities/Zell\.CognitiveServices\.Activities\.Design/obj/Release/Zell\.CognitiveServices\.Activities\.Design\.csprojAssemblyReference\.cache
+
+Zell\.CognitiveServices\.Activities/Zell\.CognitiveServices\.Activities/obj/Release/Zell\.CognitiveServices\.Activities\.csprojAssemblyReference\.cache
+
+Zell\.CognitiveServices\.Activities/\.vs/Zell\.CognitiveServices\.Activities/v15/\.suo
