@@ -11,9 +11,25 @@ using Newtonsoft.Json;
 
 namespace Zell.MachineLearningModels
 {
+    /// <summary>
+    /// Activity class for ticket classifier machine learning model
+    /// </summary>
     [Description("Email classification experiment to assign an email to one or more class(es) of predefined set of classes or work queues.")]
     public class EmailTicketClassifier : CodeActivity
     {
+        #region Constants
+        /// <summary>
+        /// Web service endpoint url for the trained model
+        /// </summary>
+        private const string ApiEndpoint = "https://ussouthcentral.services.azureml.net/workspaces/3a11f67368b7437cb061c96b6ec25e5a/services/244aa5bbf1724649be54a010b10ffa2c/execute?api-version=2.0&format=swagger";
+
+        /// <summary>
+        /// Web service api key for the trained model
+        /// </summary>
+        private const string ApiKey = "210eo81oY/BXmO1e6atv7GyKHPuolfMayLcITqO5STIjdMfg6Ja4aE4EtDCVH4Qeh2lVYwNNnh+aM2KuZwbAHw==";
+        #endregion
+
+        #region Public Properties
         [Category("Input")]
         [RequiredArgument]
         [DisplayName("Email Subject")]
@@ -40,12 +56,16 @@ namespace Zell.MachineLearningModels
         [DisplayName("Queue Name")]
         [Description("Predicted queue name classification")]
         public OutArgument<string> CaseQueueName { get; set; }
+        #endregion
 
+        #region Public Methods
+        /// <summary>
+        /// Main activity method
+        /// </summary>
+        /// <param name="context"></param>
         protected override void Execute(CodeActivityContext context)
         {
-            string endpoint = "https://ussouthcentral.services.azureml.net/workspaces/3a11f67368b7437cb061c96b6ec25e5a/services/244aa5bbf1724649be54a010b10ffa2c/execute?api-version=2.0&format=swagger";
-            string apiKey = "210eo81oY/BXmO1e6atv7GyKHPuolfMayLcITqO5STIjdMfg6Ja4aE4EtDCVH4Qeh2lVYwNNnh+aM2KuZwbAHw==";
-            WebUtility webUtility = new WebUtility(endpoint);
+            WebUtility webUtility = new WebUtility(ApiEndpoint);
             var scoreRequest = new
             {
                 Inputs = new Dictionary<string, List<Dictionary<string, string>>>()
@@ -69,8 +89,7 @@ namespace Zell.MachineLearningModels
             };
 
             string jsonStringInput = JsonConvert.SerializeObject(scoreRequest);
-            //var responseOutput = Task.Run(async () => await webUtility.PostAsJsonAsync(body: scoreRequest, token: apiKey));
-            var responseOutput = Task.Run(async () => await webUtility.PostAsync(bodyAsJsonString: jsonStringInput, token: apiKey));
+            var responseOutput = Task.Run(async () => await webUtility.PostAsync(bodyAsJsonString: jsonStringInput, token: ApiKey));
             JObject jsonResponse = JObject.Parse(responseOutput.Result);
 
             string predictedCaseType = jsonResponse.SelectToken("$..Case_CaseType").ToString();
@@ -80,5 +99,6 @@ namespace Zell.MachineLearningModels
             CaseSubject.Set(context, predictedCaseSubject);
             CaseQueueName.Set(context, predictedCaseQueueName);
         }
+        #endregion
     }
 }

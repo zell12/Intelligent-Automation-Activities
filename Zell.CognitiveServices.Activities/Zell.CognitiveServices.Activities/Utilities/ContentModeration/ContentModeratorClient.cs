@@ -10,8 +10,12 @@ using Zell.CognitiveServices.Activities.Utilities.ContentModeration.Models;
 
 namespace Utilities
 {
+    /// <summary>
+    /// Helper class for Content Moderation cognitive services
+    /// </summary>
     public class ContentModeratorHelper
     {
+        #region Fields
         /// <summary>
         /// The region/location for your Content Moderator account, 
         /// for example, westus.
@@ -28,7 +32,9 @@ namespace Utilities
         /// This is a default FREE key and should NOT be used in production.
         /// </summary>
         public static string ApiKey = "041c1c0f0d9f4030bcda7a43446bd4fd";
+        #endregion
 
+        #region Public Methods
         /// <summary>
         /// Returns a new Content Moderator client for your subscription.
         /// </summary>
@@ -45,16 +51,11 @@ namespace Utilities
             return client;
         }
 
-        public static Stream GenerateStreamFromString(string s)
-        {
-            var stream = new MemoryStream();
-            var writer = new StreamWriter(stream);
-            writer.Write(s);
-            writer.Flush();
-            stream.Position = 0;
-            return stream;
-        }
-
+        /// <summary>
+        /// Returns the text evalulation output based on the input text
+        /// </summary>
+        /// <param name="textInput"></param>
+        /// <returns>The text evaluation output</returns>
         public static TextEvaluationOutputModel GetTextEvaluationOutput(string textInput)
         {
             var output = new TextEvaluationOutputModel();
@@ -156,5 +157,23 @@ namespace Utilities
 
             return output;
         }
+        #endregion
+
+        #region Helper Methods
+        /// <summary>
+        /// Stream generation from input string
+        /// </summary>
+        /// <param name="s"></param>
+        /// <returns></returns>
+        private static Stream GenerateStreamFromString(string s)
+        {
+            var stream = new MemoryStream();
+            var writer = new StreamWriter(stream);
+            writer.Write(s);
+            writer.Flush();
+            stream.Position = 0;
+            return stream;
+        }
+        #endregion
     }
 }

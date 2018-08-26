@@ -5,10 +5,14 @@ using System.Drawing;
 
 namespace Zell.CognitiveServices
 {
+    /// <summary>
+    /// Activity class for Text Translator cognitive services
+    /// </summary>
     [Description("Cognitive service for natural language machine translation supporting over 60+ languages and dialects.")]
     [ToolboxBitmap(typeof(TextTranslator),"translator-icon.png")]
     public class TextTranslator : CodeActivity
     {
+        #region Public Properties
         [Category("Input")]
         [RequiredArgument]
         [Description("Put the text to translate here")]
@@ -35,7 +39,13 @@ namespace Zell.CognitiveServices
         [Description("This is the detected source language")]
         [DisplayName("Detected Source Language")]
         public OutArgument<string> DetectedSourceLanguage { get; set; }
+        #endregion
 
+        #region Public Methods
+        /// <summary>
+        /// Main activity method
+        /// </summary>
+        /// <param name="context"></param>
         protected override void Execute(CodeActivityContext context)
         {
             var textToTranslate = Text.Get(context);
@@ -60,5 +70,6 @@ namespace Zell.CognitiveServices
                 throw new System.Exception(MicrosoftTranslationClient.InvalidApiKeyResolution);
             }
         }
+        #endregion
     }
 }

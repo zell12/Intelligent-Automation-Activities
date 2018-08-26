@@ -8,12 +8,35 @@ using System.Web;
 
 namespace Utilities
 {
+    /// <summary>
+    /// Helper class for Text Translation cognitive services
+    /// </summary>
     public class MicrosoftTranslationClient
     {
+        #region Public Fields and Constants
+        /// <summary>
+        /// Error output for invalid key in cmd shell
+        /// </summary>
         public const string InvalidCredentialsError = "credentials are invalid";
-        public const string InvalidApiKeyResolution = "\nAn error is encountered.Subscription key might be invalid.Follow the steps below:\n(1) Subscribe and generate a text translator API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
-        public static string ApiKey = "eb54b140e6224107885efc361e02e703";
 
+        /// <summary>
+        /// Resolution instruction text for invalid key
+        /// </summary>
+        public const string InvalidApiKeyResolution = "\nAn error is encountered.Subscription key might be invalid.Follow the steps below:\n(1) Subscribe and generate a text translator API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
+
+        /// <summary>
+        /// Subscription key
+        /// </summary>
+        public static string ApiKey = "eb54b140e6224107885efc361e02e703";
+        #endregion
+
+        #region Public Methods
+        /// <summary>
+        /// Performs neural machine translation of input text via REST api call
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="to"></param>
+        /// <returns></returns>
         public static string TranslateText(string text, string to)
         {
             string uri = "https://api.microsofttranslator.com/v2/Http.svc/Translate?text=" + HttpUtility.UrlEncode(text) + "&to=" + to;
@@ -27,6 +50,11 @@ namespace Utilities
             }
         }
 
+        /// <summary>
+        /// Detects language of source text
+        /// </summary>
+        /// <param name="textToDetect"></param>
+        /// <returns></returns>
         public static string Detect(string textToDetect)
         {
             string uri = "https://api.microsofttranslator.com/v2/Http.svc/Detect?text=" + textToDetect;
@@ -39,5 +67,6 @@ namespace Utilities
                 return (string)dcs.ReadObject(stream);
             }
         }
+        #endregion
     }
 }

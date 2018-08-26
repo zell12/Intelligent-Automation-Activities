@@ -12,10 +12,26 @@ using Zell.CognitiveServices.Activities.Utilities.ContentModeration.Models;
 
 namespace Zell.CognitiveServices
 {
+    /// <summary>
+    /// Activity class for Text Moderator cognitive services
+    /// </summary>
     [Description("Helps you detect potential profanity in more than 100 languages and match text against your custom lists automatically. Content Moderator also checks for possible personally identifiable information (PII). This comes with a free text moderator api key for development purposes. If for extensive use, recommended to generate a personal subscription key.")]
     [ToolboxBitmap(typeof(TextModerator), "textmoderator-icon.png")]
     public class TextModerator : CodeActivity
     {
+        #region Fields and Constants
+        /// <summary>
+        /// Exception string for invald keys
+        /// </summary>
+        private const string GeneralException = "An error is encountered. Your subscription key might have expired, invalid or hit a governing limit. Follow the steps below:\n(1) Subscribe and generate a content API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
+
+        /// <summary>
+        /// Output from text evaluation
+        /// </summary>
+        private TextEvaluationOutputModel _contentModeratorOutput = new TextEvaluationOutputModel();
+        #endregion
+
+        #region Public Properties
         [Category("Input")]
         [RequiredArgument]
         [Description("The text to evaluate.")]
@@ -47,12 +63,12 @@ namespace Zell.CognitiveServices
         public OutArgument<double?> ProfanityCategory1Score { get; set; }
 
         [Category("Output")]
-        [Description("Potential presence of language that may be considered sexually suggestive or mature in certain situations.")]
+        [Description("Potential presence of language that may be considered sexually suggestive or mature in certain situations")]
         [DisplayName("Profanity Score - Category 2")]
         public OutArgument<double?> ProfanityCategory2Score { get; set; }
 
         [Category("Output")]
-        [Description("Potential presence of language that may be considered offensive in certain situations.")]
+        [Description("Potential presence of language that may be considered offensive in certain situations")]
         [DisplayName("Profanity Score - Category 3")]
         public OutArgument<double?> ProfanityCategory3Score { get; set; }
 
@@ -62,13 +78,16 @@ namespace Zell.CognitiveServices
         public OutArgument<bool?> ReviewRecommended { get; set; }
 
         [Category("Output")]
-        [Description("Full friendly output of the text screening evaluation")]
+        [Description("Full JSON output of the text screening evaluation")]
         [DisplayName("Full JSON Output")]
         public OutArgument<string> JsonOutput { get; set; }
+        #endregion
 
-        private const string GeneralException = "An error is encountered. Your subscription key might have expired, invalid or hit a governing limit. Follow the steps below:\n(1) Subscribe and generate a content API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
-        private TextEvaluationOutputModel _contentModeratorOutput = new TextEvaluationOutputModel();
-
+        #region Public Methods
+        /// <summary>
+        /// Main activity method
+        /// </summary>
+        /// <param name="context"></param>
         protected override void Execute(CodeActivityContext context)
         {
             var textInput = Text.Get(context);
@@ -107,5 +126,6 @@ namespace Zell.CognitiveServices
                 throw new System.Exception($"Actual Exception Message: {ex.Message}\n{GeneralException}");
             }
         }
+        #endregion
     }
 }

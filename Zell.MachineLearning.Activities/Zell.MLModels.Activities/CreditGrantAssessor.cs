@@ -12,9 +12,36 @@ using System.Data;
 
 namespace Zell.MachineLearningModels
 {
+    /// <summary>
+    /// Activity class for credit assessor machine learning model
+    /// </summary>
     [Description("Email classification experiment to assign an email to one or more class(es) of predefined set of classes or work queues.")]
     public class CreditGrantAssessor : CodeActivity
     {
+        #region Enums
+        /// <summary>
+        /// Grant status categories
+        /// </summary>
+        public enum GrantStatus
+        {
+            Approved,
+            Rejected
+        }
+        #endregion
+
+        #region Constants
+        /// <summary>
+        /// Web service endpoint url for the trained model
+        /// </summary>
+        private const string ApiEndpoint = "https://ussouthcentral.services.azureml.net/workspaces/3a11f67368b7437cb061c96b6ec25e5a/services/634c6348584946f99fd860cb7a1469ad/execute?api-version=2.0&format=swagger";
+
+        /// <summary>
+        /// Web service key for the trained model
+        /// </summary>
+        private const string ApiKey = "TwD5snN6/O3MaUvmQ03YXS911jTKtcwfCAUCt4ReWFHzMvtCW9/nkzLxTJk5A/snFOysIcPVt9vQSmwO6hskcA==";
+        #endregion        
+
+        #region Public Properties
         //[Category("Input")]
         //[RequiredArgument]
         //[DisplayName("Credit Data")]
@@ -51,17 +78,11 @@ namespace Zell.MachineLearningModels
         [DisplayName("Grant Outcome")]
         [Description("Predicted grant outcome of the loan as learned from the model")]
         public OutArgument<string> Outcome { get; set; }
+        #endregion
 
-        public enum GrantStatus
-        {
-            Approved,
-            Rejected
-        }
-
+        #region Public Methods
         protected override void Execute(CodeActivityContext context)
         {
-            string endpoint = "https://ussouthcentral.services.azureml.net/workspaces/3a11f67368b7437cb061c96b6ec25e5a/services/634c6348584946f99fd860cb7a1469ad/execute?api-version=2.0&format=swagger";
-            string apiKey = "TwD5snN6/O3MaUvmQ03YXS911jTKtcwfCAUCt4ReWFHzMvtCW9/nkzLxTJk5A/snFOysIcPVt9vQSmwO6hskcA==";
             //var inputData = InputCreditData.Get(context);
 
             List<string> listApprovedCreditStatus = new List<string>
@@ -69,7 +90,7 @@ namespace Zell.MachineLearningModels
                 "Approved","Disbursed","Disbursing","Disbursing&Repaying","Effective","Fully Disbursed","Fully Repaid","Repaid","Repaying","Signed"
             };
 
-            WebUtility webUtility = new WebUtility(endpoint);
+            WebUtility webUtility = new WebUtility(ApiEndpoint);
             var scoreRequest = new
             {
                 Inputs = new Dictionary<string, List<Dictionary<string, string>>>()
@@ -105,7 +126,7 @@ namespace Zell.MachineLearningModels
             };
 
             string jsonStringInput = JsonConvert.SerializeObject(scoreRequest);
-            var responseOutput = Task.Run(async () => await webUtility.PostAsync(bodyAsJsonString: jsonStringInput, token: apiKey));
+            var responseOutput = Task.Run(async () => await webUtility.PostAsync(bodyAsJsonString: jsonStringInput, token: ApiKey));
             JObject jsonResponse = JObject.Parse(responseOutput.Result);
 
             string predictedStatus = jsonResponse.SelectToken("$..output1[0]")["Scored Labels"].ToString();
@@ -117,5 +138,6 @@ namespace Zell.MachineLearningModels
 
             Outcome.Set(context, grantStatus);
         }
+        #endregion
     }
 }

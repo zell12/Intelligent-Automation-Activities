@@ -17,21 +17,40 @@ using Zell.MachineLearningModels;
 
 namespace Zell.MLModels.Activities.Design
 {
-    // Interaction logic for ActivityDesigner1.xaml
+    /// <summary>
+    /// Interaction logic for CreditsMlModelDesigner.xaml
+    /// </summary>
     public partial class CreditsMlModelDesigner
     {
+        #region Constants
+        /// <summary>
+        /// Description showing on the activity explorer
+        /// </summary>
+        private const string activityDescription = "v1 - Credit Risk models play a key role in the assessment of two main risk drivers. 1)Willingness to pay and 2) Ability to pay. Credit scoring algorithms, which make a guess at the probability of default, are the method banks use to determine whether or not a loan should be granted";
+        #endregion
+
+        #region Constructor
+        /// <summary>
+        /// Component initialization
+        /// </summary>
         public CreditsMlModelDesigner()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Public Methods
+        /// <summary>
+        /// The designer class' internal metadata registration method
+        /// </summary>
+        /// <param name="builder"></param>
         public static void RegisterMetadata(AttributeTableBuilder builder)
         {
-            // Text translator attribute
-            string description = "v1 - Credit Risk models play a key role in the assessment of two main risk drivers. 1)Willingness to pay and 2) Ability to pay. Credit scoring algorithms, which make a guess at the probability of default, are the method banks use to determine whether or not a loan should be granted";
+            // Attributes
             builder.AddCustomAttributes(typeof(CreditGrantAssessor), new DesignerAttribute(typeof(CreditsMlModelDesigner)));
-            builder.AddCustomAttributes(typeof(CreditGrantAssessor), new DescriptionAttribute(description));
+            builder.AddCustomAttributes(typeof(CreditGrantAssessor), new DescriptionAttribute(activityDescription));
             builder.AddCustomAttributes(typeof(CreditGrantAssessor), new CategoryAttribute(Properties.Resources.MachineLearningModelActivitesCategory));
         }
+        #endregion
     }
 }

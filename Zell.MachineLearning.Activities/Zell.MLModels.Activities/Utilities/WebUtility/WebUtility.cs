@@ -9,15 +9,36 @@ using System.Threading.Tasks;
 
 namespace Utilities
 {
+    /// <summary>
+    /// Helper class for web function
+    /// </summary>
     public class WebUtility
     {
+        #region Fields
+        /// <summary>
+        /// Endpoint url
+        /// </summary>
         readonly string _url;
+        #endregion
 
+        #region Constructor
+        /// <summary>
+        /// Web Utility constructor - initializes url
+        /// </summary>
+        /// <param name="url"></param>
         public WebUtility(string url)
         {
             _url = url;
         }
+        #endregion
 
+        #region Public Methods
+        /// <summary>
+        /// GET
+        /// </summary>
+        /// <param name="accept"></param>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public string Get(string accept = null, string token = null)
         {
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(_url);
@@ -33,6 +54,13 @@ namespace Utilities
             }
         }
 
+        /// <summary>
+        /// POST
+        /// </summary>
+        /// <param name="bodyAsJsonString"></param>
+        /// <param name="headerList"></param>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public string Post(string bodyAsJsonString, Dictionary<string, string> headerList = null, string token = null)
         {
             HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create(_url);
@@ -57,6 +85,12 @@ namespace Utilities
             }
         }
 
+        /// <summary>
+        /// GET (asynchronous)
+        /// </summary>
+        /// <param name="accept"></param>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public async Task<string> GetAsync(string accept = null, string token = null)
         {
             using (var httpClient = new HttpClient())
@@ -75,6 +109,13 @@ namespace Utilities
             }
         }
 
+        /// <summary>
+        /// POST (asynchronous)
+        /// </summary>
+        /// <param name="bodyAsJsonString"></param>
+        /// <param name="headerList"></param>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public async Task<string> PostAsync(string bodyAsJsonString, Dictionary<string, string> headerList = null, string token = null)
         {
             using (var httpClient = new HttpClient())
@@ -99,6 +140,13 @@ namespace Utilities
             }
         }
 
+        /// <summary>
+        /// POST as json (asynchronous)
+        /// </summary>
+        /// <param name="body"></param>
+        /// <param name="headerList"></param>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public async Task<string> PostAsJsonAsync(object body, Dictionary<string, string> headerList = null, string token = null)
         {
             using (var httpClient = new HttpClient())
@@ -116,6 +164,13 @@ namespace Utilities
             }
         }
 
+        /// <summary>
+        /// PUT (asynchronous)
+        /// </summary>
+        /// <param name="bodyAsJsonString"></param>
+        /// <param name="headerList"></param>
+        /// <param name="token"></param>
+        /// <returns></returns>
         public async Task<string> PutAsync(string bodyAsJsonString, Dictionary<string, string> headerList = null, string token = null)
         {
             using (var httpClient = new HttpClient())
@@ -145,5 +200,6 @@ namespace Utilities
                 return responseContent;
             }
         }
+        #endregion
     }
 }

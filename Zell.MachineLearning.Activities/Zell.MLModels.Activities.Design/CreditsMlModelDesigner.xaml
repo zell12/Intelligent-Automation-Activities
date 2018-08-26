@@ -31,13 +31,6 @@
                 </ObjectDataProvider.MethodParameters>
             </ObjectDataProvider>
             <DataTemplate x:Key="Collapsed">
-                <!--<StackPanel Orientation="Vertical">
-                    <Label Content="File/s" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Height="26" Grid.RowSpan="2" Width="37" Grid.ColumnSpan="2" />
-                    <sapv:ExpressionTextBox x:Name="fileSelection" HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.Document, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="Specify full path of document to translate here" VerticalAlignment="Center" Width="191" Margin="0,1,26.6,1.6"/>
-                    <Button x:Name="fileSelectButton" Content="..." Grid.Row="0" Grid.Column="2" Width="22" HorizontalAlignment="Right" Click="fileSelect_Click" />
-                    <Label Content="To" HorizontalAlignment="Left" Margin="1,0.4,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0" Height="25" Width="22" />
-                    <sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.TargetLanguageCode, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="1" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" DefaultValue="en" HintText="Target language code e.g. 'en','fil','pl'" VerticalAlignment="Center" Width="217" Margin="0,1.4,0.6,1.2"/>
-                </StackPanel>-->
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -50,9 +43,6 @@
                     <Label Content="Region" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Height="26" Grid.RowSpan="2" Width="50" Grid.ColumnSpan="2" />
                     <ComboBox ItemsSource="{Binding Source={StaticResource MyEnumValues}}" SelectedValue="{Binding Path=ModelItem.Region, Mode=TwoWay, Converter={StaticResource ModelToObjectValueConverter}}" VerticalAlignment="Center" 
                               Grid.Row="0" Grid.Column="1" Margin="28.4,5,-0.4,5"></ComboBox>
-                    <!--<sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.Region, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" 
-                                            Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" 
-                                            HintText="World Bank Region to which the country and loan belong. Country lending is grouped into regions based on the current World Bank administrative (rather than geographic) region where project implementation takes place. The 'Other' Region is used for loans to the IFC." VerticalAlignment="Center" Width="200" Margin="0,1,-0.4,1.6"/>-->
                 </Grid>
             </DataTemplate>
 
@@ -74,9 +64,6 @@
                     <Label Content="Region" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Height="26" Grid.RowSpan="2" Width="50" Grid.ColumnSpan="2" />
                     <ComboBox ItemsSource="{Binding Source={StaticResource MyEnumValues}}" SelectedValue="{Binding Path=ModelItem.Region, Mode=TwoWay, Converter={StaticResource ModelToObjectValueConverter}}" VerticalAlignment="Center" 
                               Grid.Row="0" Grid.Column="1" Margin="28.4,5,-0.4,5"></ComboBox>
-                    <!--<sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.Region, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" 
-                                            Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" 
-                                            HintText="World Bank Region to which the country and loan belong. Country lending is grouped into regions based on the current World Bank administrative (rather than geographic) region where project implementation takes place. The 'Other' Region is used for loans to the IFC." VerticalAlignment="Center" Width="200" Margin="0,1,-0.4,1.6"/>-->
                     <Label Content="Country" HorizontalAlignment="Left" Margin="1,0.4,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0" Height="25" Width="55" Grid.ColumnSpan="2" />
                     <sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.Country, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" 
                                             Grid.Row="1" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" 

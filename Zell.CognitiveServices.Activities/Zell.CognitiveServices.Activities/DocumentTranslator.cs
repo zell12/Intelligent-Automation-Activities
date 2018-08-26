@@ -9,10 +9,14 @@ using System.Threading.Tasks;
 
 namespace Zell.CognitiveServices
 {
+    /// <summary>
+    /// Activity class for Document Translator cognitive services
+    /// </summary>
     [Description("The Microsoft Document Translator translates Microsoft Office, plain text, HTML, PDF files and SRT caption files, from and to any of the 60+ languages supported by the Microsoft Translator web service.")]
     [ToolboxBitmap(typeof(DocumentTranslator), "doctranslator-icon.png")]
     public class DocumentTranslator : CodeActivity
     {
+        #region Public Properties
         [Category("Input")]
         [RequiredArgument]
         [DisplayName("File/s")]
@@ -35,7 +39,13 @@ namespace Zell.CognitiveServices
         [DisplayName("Translated file/s")]
         [Description("This is the translated document")]
         public OutArgument<List<string>> TranslatedDoc { get; set; }
+        #endregion
 
+        #region Public Methods
+        /// <summary>
+        /// Main activity method
+        /// </summary>
+        /// <param name="context"></param>
         protected override void Execute(CodeActivityContext context)
         {
             var inputFileSelection = Document.Get(context);
@@ -71,7 +81,7 @@ namespace Zell.CognitiveServices
             }
             try
             {
-                translatedFiles = DocumentTranslationClient.TranslateDocument(String.Join(",",filesForTranslation), targetLanguageCode);                
+                translatedFiles = DocumentTranslationClient.TranslateDocument(String.Join(",", filesForTranslation), targetLanguageCode);
                 TranslatedDoc.Set(context, translatedFiles);
             }
             catch (System.UnauthorizedAccessException uex)
@@ -83,5 +93,6 @@ namespace Zell.CognitiveServices
                 throw new System.Exception(ex.Message);
             }
         }
+        #endregion
     }
 }

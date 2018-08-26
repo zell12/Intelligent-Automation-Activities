@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Zell.MachineLearningModels
 {
+    /// <summary>
+    /// Region enumerators
+    /// </summary>
     public enum Region
     {
         AFRICA,

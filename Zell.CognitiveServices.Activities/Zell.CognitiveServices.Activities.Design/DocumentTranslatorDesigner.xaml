@@ -6,111 +6,6 @@
     xmlns:sap="clr-namespace:System.Activities.Presentation;assembly=System.Activities.Presentation"
     xmlns:sapv="clr-namespace:System.Activities.Presentation.View;assembly=System.Activities.Presentation" xmlns:CognitiveServices="clr-namespace:Zell.CognitiveServices;assembly=Zell.CognitiveServices.Activities" x:Class="Zell.CognitiveServices.Activities.Design.DocumentTranslatorDesigner"
     Width="278.933">
-    <!--<sap:ActivityDesigner.Icon>
-        <DrawingBrush Stretch="Uniform">
-            <DrawingBrush.Drawing>
-                <DrawingGroup>
-                    <GeometryDrawing Geometry="F1M2.20385,4.0706L14.253,4.0706 14.253,11.457 2.20385,11.457 2.20385,4.0706z">
-                        <GeometryDrawing.Brush>
-                            <LinearGradientBrush EndPoint="0.902898,0.178163" StartPoint="0.182424,0.178163">
-                                <LinearGradientBrush.RelativeTransform>
-                                    <TransformGroup>
-                                        <SkewTransform AngleY="0" AngleX="25.9284" CenterY="0.178163" CenterX="0.182424"/>
-                                        <RotateTransform Angle="65.7031" CenterY="0.178163" CenterX="0.182424"/>
-                                    </TransformGroup>
-                                </LinearGradientBrush.RelativeTransform>
-                                <GradientStop Color="#FFFFF9E5" Offset="0"/>
-                                <GradientStop Color="#FFF9DE8E" Offset="0.494737"/>
-                                <GradientStop Color="#FFF3C337" Offset="1"/>
-                            </LinearGradientBrush>
-                        </GeometryDrawing.Brush>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M13.1225,5.2092L3.36186,5.2092 3.36186,10.3979 13.1225,10.3979 13.1225,5.2092z">
-                        <GeometryDrawing.Brush>
-                            <LinearGradientBrush EndPoint="1.17327,-0.094203" StartPoint="-0.202685,-0.094203">
-                                <LinearGradientBrush.RelativeTransform>
-                                    <TransformGroup>
-                                        <SkewTransform AngleY="0" AngleX="32.7444" CenterY="-0.094203" CenterX="-0.202685"/>
-                                        <RotateTransform Angle="56.8625" CenterY="-0.094203" CenterX="-0.202685"/>
-                                    </TransformGroup>
-                                </LinearGradientBrush.RelativeTransform>
-                                <GradientStop Color="#FFFFFAEC" Offset="0"/>
-                                <GradientStop Color="#FFFEE8A7" Offset="0.494737"/>
-                                <GradientStop Color="#FFFED762" Offset="1"/>
-                            </LinearGradientBrush>
-                        </GeometryDrawing.Brush>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M5.49513,13.3803L10.3126,13.3803">
-                        <GeometryDrawing.Pen>
-                            <Pen Brush="#FF6B5D39" LineJoin="Round" Thickness="0.799998"/>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M10.3329,2.28559L5.51547,2.28559">
-                        <GeometryDrawing.Pen>
-                            <Pen Brush="#FF6B5D39" LineJoin="Round" Thickness="0.799998"/>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M7.89627,14.6388L7.89627,13.1397">
-                        <GeometryDrawing.Pen>
-                            <Pen Brush="#FF6B5D39" LineJoin="Round" Thickness="0.799998"/>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M7.93181,1.02712L7.93181,2.52618">
-                        <GeometryDrawing.Pen>
-                            <Pen Brush="#FF6B5D39" LineJoin="Round" Thickness="0.799998"/>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M3.37007,7.96014L13.1542,7.96014 13.1542,11.295 3.37007,11.295 3.37007,7.96014z">
-                        <GeometryDrawing.Brush>
-                            <LinearGradientBrush EndPoint="1.03061,0.5" StartPoint="-0.0306122,0.5">
-                                <GradientStop Color="#FFF6DB8F" Offset="0"/>
-                                <GradientStop Color="#FFEDC75A" Offset="0.494737"/>
-                                <GradientStop Color="#FFE5B426" Offset="1"/>
-                            </LinearGradientBrush>
-                        </GeometryDrawing.Brush>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M2.23595,4.11246L14.2775,4.11246 14.2775,11.4989 2.23595,11.4989 2.23595,4.11246z">
-                        <GeometryDrawing.Pen>
-                            <Pen LineJoin="Round" Thickness="0.650004">
-                                <Pen.Brush>
-                                    <LinearGradientBrush EndPoint="0.864141,0.204194" StartPoint="0.198199,0.204194">
-                                        <LinearGradientBrush.RelativeTransform>
-                                            <TransformGroup>
-                                                <SkewTransform AngleY="0" AngleX="24.3095" CenterY="0.204194" CenterX="0.198199"/>
-                                                <RotateTransform Angle="64.9995" CenterY="0.204194" CenterX="0.198199"/>
-                                            </TransformGroup>
-                                        </LinearGradientBrush.RelativeTransform>
-                                        <GradientStop Color="#FFA49160" Offset="0"/>
-                                        <GradientStop Color="#FF302710" Offset="1"/>
-                                    </LinearGradientBrush>
-                                </Pen.Brush>
-                            </Pen>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M5.39817,13.3803L10.4299,13.3803">
-                        <GeometryDrawing.Pen>
-                            <Pen Brush="#FF6B5D39" LineJoin="Round" Thickness="0.799998"/>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M10.4299,2.28559L5.39818,2.28559">
-                        <GeometryDrawing.Pen>
-                            <Pen Brush="#FF6B5D39" LineJoin="Round" Thickness="0.799998"/>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M7.89627,14.8271L7.89627,13.1397">
-                        <GeometryDrawing.Pen>
-                            <Pen Brush="#FF6B5D39" LineJoin="Round" Thickness="0.799998"/>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                    <GeometryDrawing Geometry="F1M7.93181,0.838776L7.93181,2.52618">
-                        <GeometryDrawing.Pen>
-                            <Pen Brush="#FF6B5D39" LineJoin="Round" Thickness="0.799998"/>
-                        </GeometryDrawing.Pen>
-                    </GeometryDrawing>
-                </DrawingGroup>
-            </DrawingBrush.Drawing>
-        </DrawingBrush>
-    </sap:ActivityDesigner.Icon>-->
     <sap:ActivityDesigner.Icon>
         <DrawingBrush>
             <DrawingBrush.Drawing>
@@ -130,13 +25,6 @@
             <sapc:ArgumentToExpressionConverter x:Key="ArgumentToExpressionConverter" />
             <sapc:ModelToObjectValueConverter x:Key="ModelToObjectValueConverter" />
             <DataTemplate x:Key="Collapsed">
-                <!--<StackPanel Orientation="Vertical">
-                    <Label Content="File/s" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Height="26" Grid.RowSpan="2" Width="37" Grid.ColumnSpan="2" />
-                    <sapv:ExpressionTextBox x:Name="fileSelection" HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.Document, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="Specify full path of document to translate here" VerticalAlignment="Center" Width="191" Margin="0,1,26.6,1.6"/>
-                    <Button x:Name="fileSelectButton" Content="..." Grid.Row="0" Grid.Column="2" Width="22" HorizontalAlignment="Right" Click="fileSelect_Click" />
-                    <Label Content="To" HorizontalAlignment="Left" Margin="1,0.4,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="0" Height="25" Width="22" />
-                    <sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.TargetLanguageCode, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="1" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" DefaultValue="en" HintText="Target language code e.g. 'en','fil','pl'" VerticalAlignment="Center" Width="217" Margin="0,1.4,0.6,1.2"/>
-                </StackPanel>-->
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*" />
@@ -162,13 +50,11 @@
                         <ColumnDefinition Width="*" />
                         <ColumnDefinition Width="6*" />
                     </Grid.ColumnDefinitions>
-
                     <Grid.RowDefinitions>
                         <RowDefinition />
                         <RowDefinition />
                         <RowDefinition />
                     </Grid.RowDefinitions>
-
                     <Label Content="File/s" HorizontalAlignment="Left" Margin="1,0,0,0" VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Height="26" Grid.RowSpan="2" Width="37" Grid.ColumnSpan="2" />
                     <sapv:ExpressionTextBox x:Name="fileSelection" HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.Document, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="Specify full path of document to translate here" VerticalAlignment="Center" Width="191" Margin="0,1,26.6,1.6"/>
                     <Button x:Name="fileSelectButton" Content="..." Grid.Row="0" Grid.Column="2" Width="22" HorizontalAlignment="Right" Click="fileSelect_Click" />
@@ -176,7 +62,6 @@
                     <sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.TargetLanguageCode, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="1" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="Target language code e.g. 'en','fil','pl'" VerticalAlignment="Center" Width="217" Margin="0,1.4,0.6,1.2"/>
                     <Label Content="Key" HorizontalAlignment="Left" Margin="1,0.8,0,-0.2" VerticalAlignment="Top" Grid.Row="2" Grid.Column="0" Height="25" Width="30" />
                     <sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.ApiKey, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="2" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="Paste Azure subscription key here. Defaults to a free key if not supplied." VerticalAlignment="Center" Width="217" Margin="0,1.4,0.6,1.2"/>
-
                 </Grid>
             </DataTemplate>
 
@@ -190,11 +75,6 @@
             </Style>
         </ResourceDictionary>
     </sap:ActivityDesigner.Resources>
-    <!--<Grid>
-        <Label Content="Text" HorizontalAlignment="Left" Margin="1,0,0,-0.4" VerticalAlignment="Top"/>
-        <sapv:ExpressionTextBox HorizontalAlignment="Left" Height="23" Margin="37,2,0,0" Expression="{Binding Path=ModelItem.Text, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:String" Grid.Row="0" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" HintText="Add text to translate here" VerticalAlignment="Top" Width="156">
-        </sapv:ExpressionTextBox>
-    </Grid>-->
     <Grid>
         <ContentPresenter x:Name="_contentPresenter" Style="{DynamicResource ExpandOrCollapsedStyle}" Content="{Binding}" Margin="0,0,-0.4,0.2" />
     </Grid>

@@ -16,21 +16,41 @@ using System.Windows.Shapes;
 
 namespace Zell.CognitiveServices.Activities.Design
 {
-    // Interaction logic for TextTranslatorDesigner.xaml
+    /// <summary>
+    /// Interaction logic for TextTranslatorDesigner.xaml
+    /// </summary>
     public partial class TextTranslatorDesigner
     {
+        #region Constants
+        /// <summary>
+        /// Description showing on the activity explorer
+        /// </summary>
+        private const string activityDescription = "v10 - Cognitive service for natural language machine translation supporting over 60 + languages and dialects. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
+        #endregion
+
+        #region Constructor
+        /// <summary>
+        /// Component initialization
+        /// </summary>
         public TextTranslatorDesigner()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Public Methods
+        /// <summary>
+        /// The designer class' internal metadata registration method
+        /// </summary>
+        /// <param name="builder"></param>
         public static void RegisterMetadata(AttributeTableBuilder builder)
         {
             // Text translator attribute
-            string textTranslatorDescription = "v10 - Cognitive service for natural language machine translation supporting over 60 + languages and dialects. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
+            string textTranslatorDescription = activityDescription;
             builder.AddCustomAttributes(typeof(TextTranslator), new DesignerAttribute(typeof(TextTranslatorDesigner)));
             builder.AddCustomAttributes(typeof(TextTranslator), new DescriptionAttribute(textTranslatorDescription));
             builder.AddCustomAttributes(typeof(TextTranslator), new CategoryAttribute(Properties.Resources.CognitiveActivitiesTranslationCategories));
         }
-}
+        #endregion
+    }
 }

@@ -11,8 +11,15 @@ using Utilities;
 
 namespace Utilities
 {
+    /// <summary>
+    /// Helper class for Document Translation cognitive services
+    /// </summary>
     public class DocumentTranslationClient
     {
+        #region Properties
+        /// <summary>
+        /// Assembly path
+        /// </summary>
         static string AssemblyDirectory
         {
             get
@@ -23,21 +30,33 @@ namespace Utilities
                 return Path.GetDirectoryName(path);
             }
         }
+        #endregion
 
-        
+        #region Fields
+        /// <summary>
+        /// Path to document translator utilities
+        /// </summary>
         static string _docTranslatorUtilityPath = $"{AssemblyDirectory}\\Utilities\\DocumentTranslator";
-        static string _docTranslatorExe = $"{_docTranslatorUtilityPath}\\DocumentTranslatorCmd.exe";
 
+        /// <summary>
+        /// Path to document translator
+        /// </summary>
+        static string _docTranslatorExe = $"{_docTranslatorUtilityPath}\\DocumentTranslatorCmd.exe";
+        #endregion
+
+        #region Public Methods
+        /// <summary>
+        /// Main method for document translation activity
+        /// </summary>
+        /// <param name="fileToBeTranslatedFullPath"></param>
+        /// <param name="targetLanguage"></param>
+        /// <returns></returns>
         public static List<string> TranslateDocument(string fileToBeTranslatedFullPath, string targetLanguage)
         {
-            //string fileToBeTranslatedFullPath = @"C:\TEMP\testDocTranslation\3M Enterprise Chatbot - Main - SnPA_RusselAlfeche.docx";
-            //string targetLanguage = "de";
             string TranslateDocumentParam = $"translatedocuments /documents:\"{fileToBeTranslatedFullPath}\" /to:{targetLanguage}";
             string SetCredentialsParam = $"setcredentials /apikey:{MicrosoftTranslationClient.ApiKey}";
 
-            //string command = $"/k \"cd /d \"{_docTranslatorUtilityPath}\" && \"{_docTranslatorExe}\" {SetCredentialsParam} && \"{_docTranslatorExe}\" {TranslateDocumentParam}\"";
             string command = $"/c \"cd /d \"{_docTranslatorUtilityPath}\" && \"{_docTranslatorExe}\" {SetCredentialsParam} && \"{_docTranslatorExe}\" {TranslateDocumentParam}\"";
-            //Console.WriteLine(command);
 
             List<string> outputFilesFullPath = new List<string>();
             foreach (var file in fileToBeTranslatedFullPath.Split(",".ToCharArray()))
@@ -62,5 +81,6 @@ namespace Utilities
                     throw new System.Exception(cmdOutput);
             }
         }
+        #endregion
     }
 }

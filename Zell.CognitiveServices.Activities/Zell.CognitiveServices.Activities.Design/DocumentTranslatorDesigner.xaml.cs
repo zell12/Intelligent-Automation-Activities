@@ -21,23 +21,48 @@ using System.Windows.Shapes;
 
 namespace Zell.CognitiveServices.Activities.Design
 {
-    // Interaction logic for DocumentTranslatorDesigner.xaml
+    /// <summary>
+    /// Interaction logic for DocumentTranslatorDesigner.xaml
+    /// </summary>
     public partial class DocumentTranslatorDesigner
     {
+        #region Constants
+        /// <summary>
+        /// Description showing on the activity explorer
+        /// </summary>
+        private const string activityDescription = "v31 - The Microsoft Document Translator translates Microsoft Office, plain text, HTML, PDF files and SRT caption files, from and to any of the 60+ languages supported by the Microsoft Translator web service. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
+        #endregion
+
+        #region Constructor
+        /// <summary>
+        /// Component initialization
+        /// </summary>
         public DocumentTranslatorDesigner()
         {
             InitializeComponent();
         }
+        #endregion
 
+        #region Public Methods
+        /// <summary>
+        /// The designer class' internal metadata registration method
+        /// </summary>
+        /// <param name="builder"></param>
         public static void RegisterMetadata(AttributeTableBuilder builder)
         {
             // Text translator attribute
-            string docTranslatorDescription = "v31 - The Microsoft Document Translator translates Microsoft Office, plain text, HTML, PDF files and SRT caption files, from and to any of the 60+ languages supported by the Microsoft Translator web service. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
             builder.AddCustomAttributes(typeof(DocumentTranslator), new DesignerAttribute(typeof(DocumentTranslatorDesigner)));
-            builder.AddCustomAttributes(typeof(DocumentTranslator), new DescriptionAttribute(docTranslatorDescription));
+            builder.AddCustomAttributes(typeof(DocumentTranslator), new DescriptionAttribute(activityDescription));
             builder.AddCustomAttributes(typeof(DocumentTranslator), new CategoryAttribute(Properties.Resources.CognitiveActivitiesTranslationCategories));
         }
+        #endregion
 
+        #region Event Methods
+        /// <summary>
+        /// Method for file selection button
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void fileSelect_Click(object sender, RoutedEventArgs e)
         {
             OpenFileDialog openFileDialog = new OpenFileDialog();
@@ -62,5 +87,6 @@ namespace Zell.CognitiveServices.Activities.Design
                 //fileSelectionText.Content = $"\"{filename}\"";
             }
         }
+        #endregion
     }
 }
