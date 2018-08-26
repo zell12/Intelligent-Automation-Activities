@@ -1,4 +1,7 @@
-
+**/obj/
+**/bin/Debug/
+**/bin/Release/
+_AppTest/
 _AppTest/ActivityDesignerWorkbench/C#/\.vs/MyActivityLibrary/DesignTimeBuild/\.dtbcache
 
 _AppTest/ActivityDesignerWorkbench/C#/\.vs/MyActivityLibrary/v15/\.suo
