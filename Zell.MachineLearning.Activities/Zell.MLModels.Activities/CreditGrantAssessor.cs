@@ -77,7 +77,7 @@ namespace Zell.MachineLearningModels
         [RequiredArgument]
         [DisplayName("Principal Amount")]
         [Description("The original US dollar amount of the loan that is committed and approved.")]
-        public InArgument<int> PrincipalAmount { get; set; }
+        public InArgument<double> PrincipalAmount { get; set; }
 
         [Category("Output")]
         [DisplayName("Grant Outcome")]

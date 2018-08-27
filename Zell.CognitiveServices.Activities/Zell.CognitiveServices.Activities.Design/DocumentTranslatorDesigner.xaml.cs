@@ -30,7 +30,7 @@ namespace Zell.CognitiveServices.Activities.Design
         /// <summary>
         /// Description showing on the activity explorer
         /// </summary>
-        private const string activityDescription = "v31 - The Microsoft Document Translator translates Microsoft Office, plain text, HTML, PDF files and SRT caption files, from and to any of the 60+ languages supported by the Microsoft Translator web service. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
+        private const string activityDescription = "v32 - The Microsoft Document Translator translates Microsoft Office, plain text, HTML, PDF files and SRT caption files, from and to any of the 60+ languages supported by the Microsoft Translator web service. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
         #endregion
 
         #region Constructor

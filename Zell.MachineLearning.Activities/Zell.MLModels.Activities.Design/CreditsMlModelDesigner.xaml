@@ -77,7 +77,7 @@
                                             Grid.Row="3" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" 
                                             HintText="Short descriptive project name." VerticalAlignment="Center" Width="200" Margin="0,2.2,-0.4,0.4"/>
                     <Label Content="Amount" HorizontalAlignment="Left" Margin="1,0.8,0,-0.2" VerticalAlignment="Top" Grid.Row="4" Grid.Column="0" Height="25" Width="62" Grid.ColumnSpan="2" Grid.RowSpan="3" />
-                    <sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.PrincipalAmount, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:Int32" 
+                    <sapv:ExpressionTextBox HorizontalAlignment="Right" Height="23" Expression="{Binding Path=ModelItem.PrincipalAmount, Mode=TwoWay, Converter={StaticResource ArgumentToExpressionConverter}, ConverterParameter=In }" ExpressionType="s:Double" 
                                             Grid.Row="4" Grid.Column="1" OwnerActivity="{Binding Path=ModelItem}" 
                                             HintText="The original US dollar amount of the loan that is committed and approved." VerticalAlignment="Center" Width="200" Margin="0,1.6,-0.4,1"/>
                 </Grid>
