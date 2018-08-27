@@ -15,7 +15,7 @@ namespace Zell.MachineLearningModels
     /// <summary>
     /// Activity class for credit assessor machine learning model
     /// </summary>
-    [Description("Email classification experiment to assign an email to one or more class(es) of predefined set of classes or work queues.")]
+    [Description("Pretrained machine learning model to effectively assess credit grant requests that can incorporated be to automation.")]
     public class CreditGrantAssessor : CodeActivity
     {
         #region Enums
@@ -30,16 +30,20 @@ namespace Zell.MachineLearningModels
         #endregion
 
         #region Constants
+        /// <summary>
+        /// Default prompt in case of exceptions
+        /// </summary>
         public const string apiHostingPlanPrompt = "This model is hosted on a free azure workspace or staging api. If an error is encountered during execution, it might be that the transaction limit per month or one of the other governing limit ss already reached. Go to this page for more details: https://azure.microsoft.com/en-us/pricing/details/machine-learning-studio/";
+        
         /// <summary>
         /// Web service endpoint url for the trained model
         /// </summary>
-        private const string ApiEndpoint = "https://ussouthcentral.services.azureml.net/workspaces/3a11f67368b7437cb061c96b6ec25e5a/services/634c6348584946f99fd860cb7a1469ad/execute?api-version=2.0&format=swagger";
+        public const string ApiEndpoint = "https://ussouthcentral.services.azureml.net/workspaces/3a11f67368b7437cb061c96b6ec25e5a/services/634c6348584946f99fd860cb7a1469ad/execute?api-version=2.0&format=swagger";
 
         /// <summary>
         /// Web service key for the trained model
         /// </summary>
-        private const string ApiKey = "TwD5snN6/O3MaUvmQ03YXS911jTKtcwfCAUCt4ReWFHzMvtCW9/nkzLxTJk5A/snFOysIcPVt9vQSmwO6hskcA==";
+        public const string ApiKey = "TwD5snN6/O3MaUvmQ03YXS911jTKtcwfCAUCt4ReWFHzMvtCW9/nkzLxTJk5A/snFOysIcPVt9vQSmwO6hskcA==";
         #endregion        
 
         #region Public Properties

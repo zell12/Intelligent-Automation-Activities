@@ -1,8 +1,8 @@
+C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Release\MyActivityDesigner.g.cs
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\bin\Release\MyActivityLibrary.Design.dll
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\bin\Release\MyActivityLibrary.Design.pdb
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Release\MyActivityLibrary.Design.csprojAssemblyReference.cache
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Release\MyActivityDesigner.baml
-C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Release\MyActivityDesigner.g.cs
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Release\MyActivityLibrary.Design_MarkupCompile.cache
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Release\MyActivityLibrary.Design.g.resources
 C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary.Design\obj\Release\MyActivityLibrary.Design.Properties.Resources.resources

@@ -23,7 +23,7 @@ namespace Zell.CognitiveServices
         /// <summary>
         /// Exception string for invald keys
         /// </summary>
-        private const string GeneralException = "An error is encountered. Your subscription key might have expired, invalid or hit a governing limit. Follow the steps below:\n(1) Subscribe and generate a content API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
+        public const string GeneralException = "An error is encountered. Your subscription key might have expired, invalid or hit a governing limit. Follow the steps below:\n(1) Subscribe and generate a content API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
 
         /// <summary>
         /// Output from text evaluation

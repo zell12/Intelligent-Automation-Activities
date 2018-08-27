@@ -70,6 +70,12 @@ namespace Zell.CognitiveServices
                     if (File.Exists(selectedFile))
                         filesForTranslation.Add(selectedFile);
                 }
+
+                if (filesForTranslation.Count == 0)
+                {
+                    // All files specified are not found.
+                    throw new System.IO.FileNotFoundException("All files specified are not found. Make sure the file exists or full path is typed correctly.");
+                }
             }
 
             var targetLanguageCode = TargetLanguageCode.Get(context);

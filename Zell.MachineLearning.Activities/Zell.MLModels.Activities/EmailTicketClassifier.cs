@@ -21,12 +21,12 @@ namespace Zell.MachineLearningModels
         /// <summary>
         /// Web service endpoint url for the trained model
         /// </summary>
-        private const string ApiEndpoint = "https://ussouthcentral.services.azureml.net/workspaces/3a11f67368b7437cb061c96b6ec25e5a/services/244aa5bbf1724649be54a010b10ffa2c/execute?api-version=2.0&format=swagger";
+        public const string ApiEndpoint = "https://ussouthcentral.services.azureml.net/workspaces/3a11f67368b7437cb061c96b6ec25e5a/services/244aa5bbf1724649be54a010b10ffa2c/execute?api-version=2.0&format=swagger";
 
         /// <summary>
         /// Web service api key for the trained model
         /// </summary>
-        private const string ApiKey = "210eo81oY/BXmO1e6atv7GyKHPuolfMayLcITqO5STIjdMfg6Ja4aE4EtDCVH4Qeh2lVYwNNnh+aM2KuZwbAHw==";
+        public const string ApiKey = "210eo81oY/BXmO1e6atv7GyKHPuolfMayLcITqO5STIjdMfg6Ja4aE4EtDCVH4Qeh2lVYwNNnh+aM2KuZwbAHw==";
         #endregion
 
         #region Public Properties

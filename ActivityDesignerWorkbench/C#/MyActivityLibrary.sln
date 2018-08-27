@@ -17,6 +17,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zell.MLModels.Activities.De
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Zell.MLModels.Activities", "..\..\Zell.MachineLearning.Activities\Zell.MLModels.Activities\Zell.MLModels.Activities.csproj", "{FD523D68-F94C-4D78-8DB8-D357974D6553}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencies", "{F713E81F-06CD-4C51-BC24-D15537F247CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLine.ToolKit", "..\..\..\..\..\..\..\..\Users\A86WMZZ\source\repos\Repo_RedLogo\Utilities\CommandLine.ToolKit\CommandLine.ToolKit.csproj", "{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,9 +109,24 @@ Global
 		{FD523D68-F94C-4D78-8DB8-D357974D6553}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{FD523D68-F94C-4D78-8DB8-D357974D6553}.Release|x86.ActiveCfg = Release|Any CPU
 		{FD523D68-F94C-4D78-8DB8-D357974D6553}.Release|x86.Build.0 = Release|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Debug|x86.Build.0 = Debug|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|x86.ActiveCfg = Release|Any CPU
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73} = {F713E81F-06CD-4C51-BC24-D15537F247CF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AD4F4016-B385-4515-80F0-840D2F87BBC6}

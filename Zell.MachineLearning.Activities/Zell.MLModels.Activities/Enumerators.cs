@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Zell.MachineLearningModels
 {
+    #region Enums
     /// <summary>
     /// Region enumerators
     /// </summary>
@@ -19,4 +20,5 @@ namespace Zell.MachineLearningModels
         OTHER,
         SOUTH_ASIA
     }
+    #endregion
 }
