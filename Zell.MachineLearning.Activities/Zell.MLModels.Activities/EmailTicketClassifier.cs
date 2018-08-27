@@ -88,16 +88,23 @@ namespace Zell.MachineLearningModels
                 }
             };
 
-            string jsonStringInput = JsonConvert.SerializeObject(scoreRequest);
-            var responseOutput = Task.Run(async () => await webUtility.PostAsync(bodyAsJsonString: jsonStringInput, token: ApiKey));
-            JObject jsonResponse = JObject.Parse(responseOutput.Result);
+            try
+            {
+                string jsonStringInput = JsonConvert.SerializeObject(scoreRequest);
+                var responseOutput = Task.Run(async () => await webUtility.PostAsync(bodyAsJsonString: jsonStringInput, token: ApiKey));
+                JObject jsonResponse = JObject.Parse(responseOutput.Result);
 
-            string predictedCaseType = jsonResponse.SelectToken("$..Case_CaseType").ToString();
-            string predictedCaseSubject = jsonResponse.SelectToken("$..Case_Subject").ToString();
-            string predictedCaseQueueName = jsonResponse.SelectToken("$..Queue_Name").ToString();
-            CaseType.Set(context, predictedCaseType);
-            CaseSubject.Set(context, predictedCaseSubject);
-            CaseQueueName.Set(context, predictedCaseQueueName);
+                string predictedCaseType = jsonResponse.SelectToken("$..Case_CaseType").ToString();
+                string predictedCaseSubject = jsonResponse.SelectToken("$..Case_Subject").ToString();
+                string predictedCaseQueueName = jsonResponse.SelectToken("$..Queue_Name").ToString();
+                CaseType.Set(context, predictedCaseType);
+                CaseSubject.Set(context, predictedCaseSubject);
+                CaseQueueName.Set(context, predictedCaseQueueName);
+            }
+            catch (Exception ex)
+            {
+                throw new System.Exception($"Actual Exception: {ex.Message}\nPossible cause: {CreditGrantAssessor.apiHostingPlanPrompt}");
+            }
         }
         #endregion
     }

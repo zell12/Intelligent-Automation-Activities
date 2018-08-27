@@ -30,6 +30,7 @@ namespace Zell.MachineLearningModels
         #endregion
 
         #region Constants
+        public const string apiHostingPlanPrompt = "This model is hosted on a free azure workspace or staging api. If an error is encountered during execution, it might be that the transaction limit per month or one of the other governing limit ss already reached. Go to this page for more details: https://azure.microsoft.com/en-us/pricing/details/machine-learning-studio/";
         /// <summary>
         /// Web service endpoint url for the trained model
         /// </summary>
@@ -125,18 +126,25 @@ namespace Zell.MachineLearningModels
                 }
             };
 
-            string jsonStringInput = JsonConvert.SerializeObject(scoreRequest);
-            var responseOutput = Task.Run(async () => await webUtility.PostAsync(bodyAsJsonString: jsonStringInput, token: ApiKey));
-            JObject jsonResponse = JObject.Parse(responseOutput.Result);
+            try
+            {
+                string jsonStringInput = JsonConvert.SerializeObject(scoreRequest);
+                var responseOutput = Task.Run(async () => await webUtility.PostAsync(bodyAsJsonString: jsonStringInput, token: ApiKey));
+                JObject jsonResponse = JObject.Parse(responseOutput.Result);
 
-            string predictedStatus = jsonResponse.SelectToken("$..output1[0]")["Scored Labels"].ToString();
-            string grantStatus = "";
-            if (listApprovedCreditStatus.Contains(predictedStatus))
-                grantStatus = GrantStatus.Approved.ToString();
-            else
-                grantStatus = GrantStatus.Rejected.ToString();
+                string predictedStatus = jsonResponse.SelectToken("$..output1[0]")["Scored Labels"].ToString();
+                string grantStatus = "";
+                if (listApprovedCreditStatus.Contains(predictedStatus))
+                    grantStatus = GrantStatus.Approved.ToString();
+                else
+                    grantStatus = GrantStatus.Rejected.ToString();
 
-            Outcome.Set(context, grantStatus);
+                Outcome.Set(context, grantStatus);
+            }
+            catch (Exception ex)
+            {
+                throw new System.Exception($"Actual Exception: {ex.InnerException}\nPossible cause: {apiHostingPlanPrompt}");
+            }
         }
         #endregion
     }
