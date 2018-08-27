@@ -25,7 +25,7 @@ namespace Zell.CognitiveServices.Activities.Design
         /// <summary>
         /// Description showing on the activity explorer
         /// </summary>
-        private const string activityDescription = "v10 - Cognitive service for natural language machine translation supporting over 60 + languages and dialects. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
+        private const string activityDescription = "v11 - Cognitive service for natural language machine translation supporting over 60 + languages and dialects. This comes with a free text transltor api key for development purposes. If for extensive use, recommended to generate a personal subscription key.";
         #endregion
 
         #region Constructor

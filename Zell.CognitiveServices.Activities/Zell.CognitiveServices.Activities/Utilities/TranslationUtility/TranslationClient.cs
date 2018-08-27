@@ -22,7 +22,7 @@ namespace Utilities
         /// <summary>
         /// Resolution instruction text for invalid key
         /// </summary>
-        public const string InvalidApiKeyResolution = "\nAn error is encountered.Subscription key might be invalid.Follow the steps below:\n(1) Subscribe and generate a text translator API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
+        public const string InvalidApiKeyResolution = "\nMake sure target language code and api key is valid. IF error encountered is invalid api key, the default or current subscription key might have already expired or invalid. Follow the steps below to resolve invalid key:\n(1) Subscribe and generate a text translator API key in Azure.\n(2) Paste the subscription key generated to ApiKey field.";
 
         /// <summary>
         /// Subscription key

@@ -67,7 +67,7 @@ namespace Zell.CognitiveServices
             }
             catch (System.Exception ex)
             {
-                throw new System.Exception(MicrosoftTranslationClient.InvalidApiKeyResolution);
+                throw new System.Exception($"Actual Error: {ex.Message}\n{MicrosoftTranslationClient.InvalidApiKeyResolution}");
             }
         }
         #endregion
