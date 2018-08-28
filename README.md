@@ -25,7 +25,7 @@ This section will show how you can install and utilize the custom activities in 
 ### Use the activities
 1. Find and collapse `Zell Power Up`  on the Available categories of Activity Explorer.
 
-	![enter image description here](https://lh3.googleusercontent.com/9YAcJvQST3c0pJrERgl5Et3YDsmIvQL3rjkzpUMeRg97HOstWcx_SGSth2KnvLoKTe-nuD69kkdj)
+	![enter image description here](https://lh3.googleusercontent.com/6mYWOeWS1Tgj_CPXWY_NH6t5SStEP8jjb76X9d9mnRqhLJDP7p0iZAPBMAQBWRT7ObhVbaViwVjS)
 
 > 	If the category cannot be found upon installation, you may need to
 > restart UiPath Studio for the new activities to be available.
@@ -36,6 +36,8 @@ This section will show how you can install and utilize the custom activities in 
 
 # Packages and Activity Inclusions
 ##  `Version 1.1 (August 22, 2018)` 
+	## Changes and Bug fixes
+	- Fixed FileNotFoundException if only one file is selected and other minor bug fixes
     ## Additions
     - Additional intelligent activities
 	    Text Moderation (Cognitive service)
@@ -113,7 +115,7 @@ Activities integrated into a powerful cloud-based predictive analytics service t
 ### Email ticket classifier 
 Email classification experiment to assign an email to one or more class(es) of predefined set of classes or work queues.
 
-![enter image description here](https://lh3.googleusercontent.com/6WM3mKrDX683x5R8lPahVuIe2jKuI5X4lxUtnPM1T80A6wGneOj-ZisfIhr7600OndF0Q2hFeRO2)
+![enter image description here](https://lh3.googleusercontent.com/33dwMa2ppurFk_hb0cs_FAfioaAca43NyBKr_1NPuP9S6zWCYODBH0WpE5ltOIZY9Lqvr59Ku08x)
 
 **Activity Parameters**
 
@@ -128,13 +130,6 @@ These instructions will get you a copy of the project up and running on your loc
  - [x] [Visual Studio 2017 (at least Community Edition)](https://www.visualstudio.com/)
  - [x] [Nuget Package explorer](https://github.com/NuGetPackageExplorer/NuGetPackageExplorer/releases)
  - [x] Clone or download this repository
-
-## Debugging
-
-### Via Visual Studio
-> Under construction
-### Via UiPath Studio
-> Under construction
 
 ## Updating local package
 
