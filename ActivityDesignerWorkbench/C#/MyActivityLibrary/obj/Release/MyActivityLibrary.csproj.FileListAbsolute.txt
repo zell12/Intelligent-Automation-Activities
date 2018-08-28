@@ -1,6 +1,0 @@
-C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\bin\Release\MyActivityLibrary.dll
-C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\bin\Release\MyActivityLibrary.pdb
-C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\obj\Release\MyActivityLibrary.csprojAssemblyReference.cache
-C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\obj\Release\MyActivityLibrary.csproj.CoreCompileInputs.cache
-C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\obj\Release\MyActivityLibrary.dll
-C:\TEMP\_Dev\GeneralWorkspace\Projects\CSharp\UiPathActivities\ActivityDesignerWorkbench\C#\MyActivityLibrary\obj\Release\MyActivityLibrary.pdb

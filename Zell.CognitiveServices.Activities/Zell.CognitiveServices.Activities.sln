@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommandLine.ToolKit", "..\.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTest", "UnitTest", "{13E84B81-5156-41ED-A667-EC12C272E571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppForActivitiesTesting", "..\_AppTest\ConsoleAppForActivitiesTesting\ConsoleAppForActivitiesTesting.csproj", "{CE083CEF-F793-4452-8936-62ED0ADC597F}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependency", "Dependency", "{3AAF9C80-E346-4213-A031-D59366E202DF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCognitiveServices", "TestCognitiveServices\TestCognitiveServices.csproj", "{DC19A317-CE4C-4B68-BB31-D63F6E600BBA}"
@@ -49,14 +47,6 @@ Global
 		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|Any CPU.Build.0 = Release|Any CPU
 		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|x86.ActiveCfg = Release|Any CPU
 		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73}.Release|x86.Build.0 = Release|Any CPU
-		{CE083CEF-F793-4452-8936-62ED0ADC597F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{CE083CEF-F793-4452-8936-62ED0ADC597F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{CE083CEF-F793-4452-8936-62ED0ADC597F}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{CE083CEF-F793-4452-8936-62ED0ADC597F}.Debug|x86.Build.0 = Debug|Any CPU
-		{CE083CEF-F793-4452-8936-62ED0ADC597F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{CE083CEF-F793-4452-8936-62ED0ADC597F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{CE083CEF-F793-4452-8936-62ED0ADC597F}.Release|x86.ActiveCfg = Release|Any CPU
-		{CE083CEF-F793-4452-8936-62ED0ADC597F}.Release|x86.Build.0 = Release|Any CPU
 		{DC19A317-CE4C-4B68-BB31-D63F6E600BBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DC19A317-CE4C-4B68-BB31-D63F6E600BBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC19A317-CE4C-4B68-BB31-D63F6E600BBA}.Debug|x86.ActiveCfg = Debug|Any CPU
@@ -71,7 +61,6 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{04BDEA52-8F42-45B7-A4DE-5675EB8D1C73} = {3AAF9C80-E346-4213-A031-D59366E202DF}
-		{CE083CEF-F793-4452-8936-62ED0ADC597F} = {13E84B81-5156-41ED-A667-EC12C272E571}
 		{DC19A317-CE4C-4B68-BB31-D63F6E600BBA} = {13E84B81-5156-41ED-A667-EC12C272E571}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
