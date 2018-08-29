@@ -14,13 +14,16 @@ This section will show how you can install and utilize the custom activities in 
 
 ### Install the activity packages in UiPath Studio
 
-1. Open UiPath Studio and go to **Manage Packages** or hit `CTRL + P`.
+1. Download the Nuget packages [**HERE**](https://github.com/zell12/Intelligent-Automation-Activities/tree/master/PackageBuilds/final).
 
-2. Select **Community** category and search for `Zell.CognitiveServices.Activities` and `Zell.MachineLearningModels.Activities`.
+2. Copy packages (.nupkg) and paste it into the `C:\Program Files\UiPath Studio\Packages`.
 
-	  ![enter image description here](https://lh3.googleusercontent.com/B_50yv3r2itMB4D1EjngnnMtzjGapG_SE6_LJ-9VOWCHQXAVW2OXRWYEEA5QoM6nPQUAH2KPkkLO)
+3. Open UiPath Studio and go to **Manage Packages** or hit `CTRL + P`.
 
-4. Install the specified packages.
+4. Click on **Available** -> **Local** -> search for `Zell.CognitiveServices.Activities` and `Zell.MachineLearningModels.Activities`. Install the specified packages.
+
+	![enter image description here](https://lh3.googleusercontent.com/B_50yv3r2itMB4D1EjngnnMtzjGapG_SE6_LJ-9VOWCHQXAVW2OXRWYEEA5QoM6nPQUAH2KPkkLO)
+         
 
 ### Use the activities
 1. Find and collapse `Zell Power Up`  on the Available categories of Activity Explorer.
