@@ -160,4 +160,4 @@ These instructions will get you a copy of the project up and running on your loc
 # License
 Copyright (c) Russel Alfeche. All rights reserved.
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.MD](LICENSE.MD) file for details
