@@ -44,7 +44,7 @@ This section will show how you can install and utilize the custom activities in 
     - Additional intelligent activities
 	    Text Moderation (Cognitive service)
 	    Credit Grant Assessor (Machine Learning Model)
-### Text Moderation
+### Text Moderation (Cognitive Activity)
 Helps you detect potential profanity in more than 100 languages and match text against your custom lists automatically. Content Moderator also checks for possible personally identifiable information (PII). This activity comes with a free text moderator api key for development purposes. If for extensive use, its recommended to generate your own subscription key in Azure.
 
 > You can [sign up here](https://azure.microsoft.com/en-us/try/cognitive-services/)  for the  **free**  trial key.  A free trial key is limited **only to 1 call per second.**
@@ -56,7 +56,7 @@ Helps you detect potential profanity in more than 100 languages and match text a
 
 ![enter image description here](https://lh3.googleusercontent.com/aFe2f9nMcWSqbosSHhW5qREd3pNKUw8OyV8f4mPUc4dEbqD2W40Rj6JfsfNJ5NEh9RZjYQnO4VYX)
 
-### Credit Grant Assessor
+### Credit Grant Assessor (Machine Learning Model)
 This activity can be used to easily incorporate credit risk assessment into your automation. Credit Risk models play a key role in the assessment of two main risk drivers. 1)Willingness to pay and 2) Ability to pay. Credit scoring algorithms, which make a guess at the probability of default, are the method banks use to determine whether or not a loan should be granted.
 
 ![enter image description here](https://lh3.googleusercontent.com/UmvVXCtia-Uu9lrCSmczidcA2F8rxl1BIuWwIhOIXg0BJPMzSQx4A8FktAMj4PDlt6r_0qTKF2I8)
