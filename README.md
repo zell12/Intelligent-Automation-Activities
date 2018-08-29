@@ -73,7 +73,7 @@ Easy-to-use and intelligent automation activity APIs and libraries built on top 
 
 Translate one or more Office documents, plain text HTML or PDF documents to another language, in one go.
 
-![enter image description here](https://lh3.googleusercontent.com/llBGwq3__4TGa2gf6lkTqykbPswe6JYZv7t7qku4RLS7GMozPZLHARUmGc1ACGMCYpOOoI6_5lgV)
+![enter image description here](https://lh3.googleusercontent.com/UdH72bZ83tmPaU0N9veQgyyNxTddapAkwupWVldMZRBO-hb0XYm8s35H4olVNf_FVucMPGMntEPs)
 
 **Activity Parameters**
 
