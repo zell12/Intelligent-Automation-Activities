@@ -31,7 +31,7 @@ namespace Utilities
         /// <summary>
         /// This is a default FREE key and should NOT be used in production.
         /// </summary>
-        public static string ApiKey = "041c1c0f0d9f4030bcda7a43446bd4fd";
+        public static string ApiKey = "YOUR_API_KEY_HERE";
         #endregion
 
         #region Public Methods

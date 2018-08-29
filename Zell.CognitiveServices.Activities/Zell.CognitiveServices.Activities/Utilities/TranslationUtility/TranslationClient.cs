@@ -27,7 +27,7 @@ namespace Utilities
         /// <summary>
         /// Subscription key
         /// </summary>
-        public static string ApiKey = "eb54b140e6224107885efc361e02e703";
+        public static string ApiKey = "YOUR_API_KEY_HERE";
         #endregion
 
         #region Public Methods
