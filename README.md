@@ -1,7 +1,6 @@
 
 # INTELLIGENT CUSTOM ACTIVITIES FOR UIPATH
 These are packages and custom activities infused with AI - Machine Learning models, cognitive services and all those good stuffs. Each are carefully implemented and structured to provide a whole new meaning of intelligence to your automation workflows. 
-All of these are available to the community via [UiPath community gallery.](https://gallery.uipath.com/)
 
 # Getting Started
 This section will show how you can install and utilize the custom activities in your automation workflow.
