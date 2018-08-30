@@ -92,7 +92,7 @@ namespace Zell.CognitiveServices
             }
             catch (System.UnauthorizedAccessException uex)
             {
-                throw new System.UnauthorizedAccessException(MicrosoftTranslationClient.InvalidApiKeyResolution);
+                throw new System.UnauthorizedAccessException($"FULL OUTPUT: {uex.Message}\n{MicrosoftTranslationClient.InvalidApiKeyResolution}");
             }
             catch (System.Exception ex)
             {

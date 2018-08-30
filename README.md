@@ -1,4 +1,3 @@
-
 # INTELLIGENT CUSTOM ACTIVITIES FOR UIPATH
 These are packages and custom activities infused with AI - Machine Learning models, cognitive services and all those good stuffs. Each are carefully implemented and structured to provide a whole new meaning of intelligence to your automation workflows. 
 
@@ -39,7 +38,8 @@ This section will show how you can install and utilize the custom activities in 
 # Packages and Activity Inclusions
 ##  `Version 1.1 (August 22, 2018)` 
 	## Changes and Bug fixes
-	- Fixed FileNotFoundException if only one file is selected and other minor bug fixes
+	- [1.1.10 - Aug 22, 2018] Fixed FileNotFoundException if only one file is selected and other minor bug fixes
+	- [1.1.20 - Aug 29, 2018] Fixed corruped output for document translator
     ## Additions
     - Additional intelligent activities
 	    Text Moderation (Cognitive service)

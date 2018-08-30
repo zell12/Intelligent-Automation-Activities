@@ -113,7 +113,7 @@ namespace TestCognitiveServices
         public void Translate_ValidMultipleFiles()
         {
             var files = @"C:\TEMP\testDocTranslation\3M Enterprise Chatbot - Main - SnPA_RusselAlfeche.docx|C:\TEMP\testDocTranslation\3M Enterprise Chatbot - Main - SnPA_RusselAlfeche - Copy.docx";
-            var targetLanguage = "de";
+            var targetLanguage = "ja";
             List<string> outputList = new List<string>();
             string expectedOutput = "";
             foreach (var file in files.Split("|".ToCharArray()))

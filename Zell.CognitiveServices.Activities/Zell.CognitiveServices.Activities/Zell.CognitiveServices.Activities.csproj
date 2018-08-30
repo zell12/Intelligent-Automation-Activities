@@ -31,18 +31,21 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Microsoft.Azure.CognitiveServices.ContentModerator">
+    <Reference Include="Microsoft.Azure.CognitiveServices.ContentModerator, Version=0.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\.nuget\packages\microsoft.azure.cognitiveservices.contentmoderator\0.12.1-preview\lib\net452\Microsoft.Azure.CognitiveServices.ContentModerator.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Rest.ClientRuntime">
+    <Reference Include="Microsoft.Rest.ClientRuntime, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\.nuget\packages\microsoft.rest.clientruntime\2.3.11\lib\net452\Microsoft.Rest.ClientRuntime.dll</HintPath>
     </Reference>
-    <Reference Include="Microsoft.Rest.ClientRuntime.Azure">
+    <Reference Include="Microsoft.Rest.ClientRuntime.Azure, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\.nuget\packages\microsoft.rest.clientruntime.azure\3.3.12\lib\net452\Microsoft.Rest.ClientRuntime.Azure.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\.nuget\packages\newtonsoft.json\11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\..\..\..\..\..\..\..\Users\A86WMZZ\source\repos\Repo_RedLogo\Bot Applications\Multi-Functional\ChatbotPilot\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Activities" />
@@ -50,6 +53,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
@@ -70,19 +76,10 @@
     <Compile Include="Utilities\TranslationUtility\TranslationClient.cs" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="doctranslator-icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedResource>
-    <Content Include="textmoderator-icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="translator-icon.png">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\DocumentFormat.OpenXml.dll">
+    <Content Include="Utilities\DocumentTranslator\DocTranslator_48.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Utilities\DocumentTranslator\DocumentFormat.OpenXml.xml">
+    <Content Include="Utilities\DocumentTranslator\DocumentFormat.OpenXml.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Utilities\DocumentTranslator\DocumentTranslator.Tmx.dll">
@@ -91,16 +88,22 @@
     <Content Include="Utilities\DocumentTranslator\DocumentTranslatorCmd.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Utilities\DocumentTranslator\DocumentTranslatorCmd.exe.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Utilities\DocumentTranslator\en\DocumentTranslator.resources.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Utilities\DocumentTranslator\FirstFloor.ModernUI.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Utilities\DocumentTranslator\fr\DocumentTranslator.resources.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Utilities\DocumentTranslator\HtmlAgilityPack.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Utilities\DocumentTranslator\HtmlAgilityPack.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\Microsoft.Win32.Primitives.dll">
+    <Content Include="Utilities\DocumentTranslator\Microsoft.Practices.Prism.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Utilities\DocumentTranslator\Newtonsoft.Json.dll">
@@ -109,58 +112,13 @@
     <Content Include="Utilities\DocumentTranslator\OpenXmlPowerTools.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Utilities\DocumentTranslator\System.AppContext.dll">
+    <Content Include="Utilities\DocumentTranslator\System.Net.Http.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Console.dll">
+    <Content Include="Utilities\DocumentTranslator\System.Windows.Interactivity.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Diagnostics.DiagnosticSource.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Diagnostics.DiagnosticSource.xml">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Globalization.Calendars.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.IO.Compression.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.IO.Compression.ZipFile.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.IO.FileSystem.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.IO.FileSystem.Primitives.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.IO.Packaging.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Management.Automation.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Net.Sockets.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Runtime.InteropServices.RuntimeInformation.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Security.Cryptography.Algorithms.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Security.Cryptography.Encoding.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Security.Cryptography.Primitives.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Security.Cryptography.X509Certificates.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\System.Xml.ReaderWriter.dll">
+    <Content Include="Utilities\DocumentTranslator\TmxLangMap.csv">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Utilities\DocumentTranslator\Tools.TranslationAssistant.TranslationServices.Core.dll">
@@ -175,22 +133,14 @@
     <Content Include="Utilities\DocumentTranslator\TranslationAssistant.Business.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Utilities\DocumentTranslator\DocumentTranslatorCmd.exe.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <EmbeddedResource Include="doctranslator-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <Content Include="textmoderator-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="Utilities\DocumentTranslator\TmxLangMap.csv">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\Tools.TranslationAssistant.TranslationServices.Core.dll.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\TranslationAssistant.AutomationToolkit.TranslationPlugins.dll.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Utilities\DocumentTranslator\TranslationAssistant.Business.dll.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    <Content Include="translator-icon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <ItemGroup>
