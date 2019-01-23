@@ -45,7 +45,7 @@ This section will show how you can install and utilize the custom activities in 
 	    Text Moderation (Cognitive service)
 	    Credit Grant Assessor (Machine Learning Model)
 ### Text Moderation (Cognitive Activity)
-![asd](https://img.youtube.com/vi/lKAouhhEb64/0.jpg)
+[![asd](https://img.youtube.com/vi/lKAouhhEb64/0.jpg)](https://www.youtube.com/watch?v=lKAouhhEb64)
 
 Helps you detect potential profanity in more than 100 languages and match text against your custom lists automatically. Content Moderator also checks for possible personally identifiable information (PII). This activity comes with a free text moderator api key for development purposes. If for extensive use, its recommended to generate your own subscription key in Azure.
 
@@ -59,7 +59,7 @@ Helps you detect potential profanity in more than 100 languages and match text a
 ![enter image description here](https://lh3.googleusercontent.com/aFe2f9nMcWSqbosSHhW5qREd3pNKUw8OyV8f4mPUc4dEbqD2W40Rj6JfsfNJ5NEh9RZjYQnO4VYX)
 
 ### Credit Grant Assessor (Machine Learning Model)
-![asd](https://img.youtube.com/vi/BBpXoLzYrhU/0.jpg)
+[![asd](https://img.youtube.com/vi/BBpXoLzYrhU/0.jpg)](https://www.youtube.com/watch?v=BBpXoLzYrhU)
 
 This activity can be used to easily incorporate credit risk assessment into your automation. Credit Risk models play a key role in the assessment of two main risk drivers. 1)Willingness to pay and 2) Ability to pay. Credit scoring algorithms, which make a guess at the probability of default, are the method banks use to determine whether or not a loan should be granted.
 
@@ -74,7 +74,7 @@ This activity can be used to easily incorporate credit risk assessment into your
 ## Cognitive Services
 Easy-to-use and intelligent automation activity APIs and libraries built on top of Microsoft Azure cognitive service platforms.
 ### Document Translator
-![asd](https://img.youtube.com/vi/QEcMZPGC9X4/0.jpg)
+[![asd](https://img.youtube.com/vi/QEcMZPGC9X4/0.jpg)](https://www.youtube.com/watch?v=QEcMZPGC9X4)
 
 Translate one or more Office documents, plain text HTML or PDF documents to another language, in one go.
 
@@ -120,7 +120,7 @@ Cognitive service for natural language machine translation supporting over 60+ l
 Activities integrated into a powerful cloud-based predictive analytics service that makes it possible to quickly create and deploy predictive models as analytics solutions.
 
 ### Email ticket classifier 
-![asd](https://img.youtube.com/vi/_VydRQlalZs/0.jpg)
+[![asd](https://img.youtube.com/vi/_VydRQlalZs/0.jpg)](https://www.youtube.com/watch?v=_VydRQlalZs)
 
 Email classification experiment to assign an email to one or more class(es) of predefined set of classes or work queues.
 
